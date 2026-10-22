@@ -7,35 +7,37 @@
   "And": {
    "file": "constellation_art/andromeda.webp",
    "size": [
-    512,
-    512
+    1023,
+    841
    ],
    "anchors": [
     {
-     "hip": 3881,
-     "hr": 226,
+     "hip": null,
+     "hr": 15,
      "px": [
-      198,
-      215
+      167.8,
+      321.9
      ]
     },
     {
-     "hip": 3092,
-     "hr": 165,
-     "px": [
-      337,
-      136
-     ]
-    },
-    {
-     "hip": 9640,
+     "hip": null,
      "hr": 603,
      "px": [
-      224,
-      428
+      774.4,
+      260.5
+     ]
+    },
+    {
+     "hip": null,
+     "hr": 226,
+     "px": [
+      492.3,
+      401.9
      ]
     }
-   ]
+   ],
+   "source": "hevelius",
+   "credit": "Johannes Hevelius, Uranographia (1690), public domain; scan via Wikimedia Commons (https://commons.wikimedia.org/wiki/File:Johannes_Hevelius_-_Andromeda.jpg)"
   },
   "Ant": {
    "file": "constellation_art/antlia.webp",
@@ -139,35 +141,37 @@
   "Aqr": {
    "file": "constellation_art/aquarius.webp",
    "size": [
-    512,
-    512
+    1024,
+    809
    ],
    "anchors": [
     {
-     "hip": 115438,
-     "hr": 8892,
-     "px": [
-      144,
-      464
-     ]
-    },
-    {
-     "hip": 109074,
+     "hip": null,
      "hr": 8414,
      "px": [
-      179,
-      98
+      507.5,
+      137.8
      ]
     },
     {
-     "hip": 102618,
+     "hip": null,
      "hr": 7950,
      "px": [
-      465,
-      49
+      928.8,
+      174.6
+     ]
+    },
+    {
+     "hip": null,
+     "hr": 8892,
+     "px": [
+      323.2,
+      623.3
      ]
     }
-   ]
+   ],
+   "source": "hevelius",
+   "credit": "Johannes Hevelius, Uranographia (1690), public domain; scan via Wikimedia Commons (https://commons.wikimedia.org/wiki/File:Aquarius_-_Prodromus_astronomiae_1690_(5590543).jpg)"
   },
   "Ara": {
    "file": "constellation_art/ara.webp",
@@ -601,35 +605,37 @@
   "Cep": {
    "file": "constellation_art/cepheus.webp",
    "size": [
-    512,
-    512
+    1024,
+    732
    ],
    "anchors": [
     {
-     "hip": 116727,
+     "hip": null,
+     "hr": 8162,
+     "px": [
+      729.5,
+      246.9
+     ]
+    },
+    {
+     "hip": null,
      "hr": 8974,
      "px": [
-      60,
-      335
+      396.8,
+      508.4
      ]
     },
     {
-     "hip": 106032,
-     "hr": 8238,
-     "px": [
-      125,
-      170
-     ]
-    },
-    {
-     "hip": 109492,
+     "hip": null,
      "hr": 8465,
      "px": [
-      335,
-      147
+      866.3,
+      377.3
      ]
     }
-   ]
+   ],
+   "source": "hevelius",
+   "credit": "Johannes Hevelius, Uranographia (1690), public domain; scan via Wikimedia Commons (https://commons.wikimedia.org/wiki/File:Johannes_Hevelius_-_Cepheus.jpg)"
   },
   "Cet": {
    "file": "constellation_art/cetus.webp",
@@ -997,35 +1003,37 @@
   "Cyg": {
    "file": "constellation_art/cygnus.webp",
    "size": [
-    512,
-    512
+    1024,
+    685
    ],
    "anchors": [
     {
-     "hip": 107310,
-     "hr": 8309,
-     "px": [
-      7,
-      382
-     ]
-    },
-    {
-     "hip": 94779,
-     "hr": 7328,
-     "px": [
-      474,
-      46
-     ]
-    },
-    {
-     "hip": 95947,
+     "hip": null,
      "hr": 7417,
      "px": [
-      467,
-      453
+      937.3,
+      475.0
+     ]
+    },
+    {
+     "hip": null,
+     "hr": 8115,
+     "px": [
+      284.0,
+      589.1
+     ]
+    },
+    {
+     "hip": null,
+     "hr": 7328,
+     "px": [
+      564.9,
+      92.0
      ]
     }
-   ]
+   ],
+   "source": "hevelius",
+   "credit": "Johannes Hevelius, Uranographia (1690), public domain; scan via Wikimedia Commons (https://commons.wikimedia.org/wiki/File:Johannes_Hevelius_-_Cygnus.jpg)"
   },
   "Del": {
    "file": "constellation_art/delphinus.webp",
@@ -1294,35 +1302,37 @@
   "Her": {
    "file": "constellation_art/hercules.webp",
    "size": [
-    512,
-    512
+    940,
+    1024
    ],
    "anchors": [
     {
-     "hip": 80170,
-     "hr": 6095,
+     "hip": null,
+     "hr": 6406,
      "px": [
-      44,
-      115
+      534.6,
+      755.2
      ]
     },
     {
-     "hip": 79992,
-     "hr": 6092,
+     "hip": null,
+     "hr": 6220,
      "px": [
-      254,
-      477
+      720.6,
+      329.4
      ]
     },
     {
-     "hip": 88794,
-     "hr": 6779,
+     "hip": null,
+     "hr": 6703,
      "px": [
-      441,
-      102
+      409.7,
+      451.9
      ]
     }
-   ]
+   ],
+   "source": "hevelius",
+   "credit": "Johannes Hevelius, Uranographia (1690), public domain; scan via Wikimedia Commons (https://commons.wikimedia.org/wiki/File:Johannes_Hevelius_-_Hercules.jpg)"
   },
   "Hor": {
    "file": "constellation_art/horlogium.webp",
@@ -1525,35 +1535,37 @@
   "Leo": {
    "file": "constellation_art/leo.webp",
    "size": [
-    512,
-    512
+    1024,
+    914
    ],
    "anchors": [
     {
-     "hip": 57632,
-     "hr": 4534,
-     "px": [
-      69,
-      411
-     ]
-    },
-    {
-     "hip": 49669,
+     "hip": null,
      "hr": 3982,
      "px": [
-      383,
-      186
+      640.8,
+      554.7
      ]
     },
     {
-     "hip": 47908,
+     "hip": null,
+     "hr": 4534,
+     "px": [
+      157.8,
+      321.3
+     ]
+    },
+    {
+     "hip": null,
      "hr": 3873,
      "px": [
-      321,
-      32
+      826.0,
+      334.6
      ]
     }
-   ]
+   ],
+   "source": "hevelius",
+   "credit": "Johannes Hevelius, Uranographia (1690), public domain; scan via Wikimedia Commons (https://commons.wikimedia.org/wiki/File:Johannes_Hevelius_-_Leo.jpg)"
   },
   "Lep": {
    "file": "constellation_art/lepus.webp",
@@ -1954,35 +1966,37 @@
   "Ori": {
    "file": "constellation_art/orion.webp",
    "size": [
-    512,
-    512
+    824,
+    1024
    ],
    "anchors": [
     {
-     "hip": 27913,
-     "hr": 2047,
+     "hip": null,
+     "hr": 2061,
      "px": [
-      59,
-      11
+      270.7,
+      467.8
      ]
     },
     {
-     "hip": 27366,
+     "hip": null,
      "hr": 2004,
      "px": [
-      329,
-      477
+      350.1,
+      948.5
      ]
     },
     {
-     "hip": 22449,
+     "hip": null,
      "hr": 1543,
      "px": [
-      421,
-      91
+      732.8,
+      451.5
      ]
     }
-   ]
+   ],
+   "source": "hevelius",
+   "credit": "Johannes Hevelius, Uranographia (1690), public domain; scan via Wikimedia Commons (https://commons.wikimedia.org/wiki/File:Orion_constellation_-_Prodromus_astronomiae_1690_(5590584).jpg)"
   },
   "Pav": {
    "file": "constellation_art/pavo.webp",
@@ -2020,68 +2034,72 @@
   "Peg": {
    "file": "constellation_art/pegasus.webp",
    "size": [
-    512,
-    512
+    1023,
+    848
    ],
    "anchors": [
     {
-     "hip": 107315,
+     "hip": null,
      "hr": 8308,
      "px": [
-      164,
-      41
+      817.8,
+      427.5
      ]
     },
     {
-     "hip": 109410,
-     "hr": 8454,
-     "px": [
-      47,
-      283
-     ]
-    },
-    {
-     "hip": 1067,
+     "hip": null,
      "hr": 39,
      "px": [
-      409,
-      349
+      155.5,
+      744.1
+     ]
+    },
+    {
+     "hip": null,
+     "hr": 8650,
+     "px": [
+      352.7,
+      276.0
      ]
     }
-   ]
+   ],
+   "source": "hevelius",
+   "credit": "Johannes Hevelius, Uranographia (1690), public domain; scan via Wikimedia Commons (https://commons.wikimedia.org/wiki/File:Johannes_Hevelius_-_Pegasus.jpg)"
   },
   "Per": {
    "file": "constellation_art/perseus.webp",
    "size": [
-    512,
-    512
+    881,
+    1024
    ],
    "anchors": [
     {
-     "hip": 18532,
+     "hip": null,
      "hr": 1220,
      "px": [
-      164,
-      323
+      326.8,
+      711.3
      ]
     },
     {
-     "hip": 15863,
-     "hr": 1017,
+     "hip": null,
+     "hr": 921,
      "px": [
-      299,
-      175
+      593.4,
+      665.0
      ]
     },
     {
-     "hip": 13254,
-     "hr": 840,
+     "hip": null,
+     "hr": 834,
      "px": [
-      385,
-      386
+      481.8,
+      212.4
      ]
     }
-   ]
+   ],
+   "source": "hevelius",
+   "credit": "Johannes Hevelius, Uranographia (1690), public domain; scan via Wikimedia Commons (https://commons.wikimedia.org/wiki/File:Johannes_Hevelius_-_Perseus.jpg)"
   },
   "Phe": {
    "file": "constellation_art/phoenix.webp",
@@ -2352,35 +2370,37 @@
   "Sco": {
    "file": "constellation_art/scorpius.webp",
    "size": [
-    512,
-    512
+    829,
+    1024
    ],
    "anchors": [
     {
-     "hip": 78820,
-     "hr": 5984,
-     "px": [
-      447,
-      29
-     ]
-    },
-    {
-     "hip": 85927,
+     "hip": null,
      "hr": 6527,
      "px": [
-      62,
-      365
+      171.2,
+      762.8
      ]
     },
     {
-     "hip": 82729,
-     "hr": 6271,
+     "hip": null,
+     "hr": 6553,
      "px": [
-      217,
-      462
+      157.6,
+      914.2
+     ]
+    },
+    {
+     "hip": null,
+     "hr": 5953,
+     "px": [
+      708.0,
+      440.5
      ]
     }
-   ]
+   ],
+   "source": "hevelius",
+   "credit": "Johannes Hevelius, Uranographia (1690), public domain; scan via Wikimedia Commons (https://commons.wikimedia.org/wiki/File:Johannes_Hevelius_-_Scorpius.jpg)"
   },
   "Sct": {
    "file": "constellation_art/scutum.webp",
@@ -2519,68 +2539,72 @@
   "Sgr": {
    "file": "constellation_art/sagittarius.webp",
    "size": [
-    512,
-    512
+    1024,
+    1011
    ],
    "anchors": [
     {
-     "hip": 95168,
-     "hr": 7340,
+     "hip": null,
+     "hr": 7194,
      "px": [
-      96,
-      82
+      565.8,
+      496.7
      ]
     },
     {
-     "hip": 95294,
-     "hr": 7343,
+     "hip": null,
+     "hr": 6913,
      "px": [
-      307,
-      492
+      741.8,
+      360.0
      ]
     },
     {
-     "hip": 87072,
-     "hr": 6616,
+     "hip": null,
+     "hr": 6832,
      "px": [
-      506,
-      100
+      822.0,
+      637.3
      ]
     }
-   ]
+   ],
+   "source": "hevelius",
+   "credit": "Johannes Hevelius, Uranographia (1690), public domain; scan via Wikimedia Commons (https://commons.wikimedia.org/wiki/File:Sagittarius_-_Prodromus_astronomiae_1690_(436253).jpg)"
   },
   "Tau": {
    "file": "constellation_art/taurus.webp",
    "size": [
-    512,
-    512
+    1024,
+    809
    ],
    "anchors": [
     {
-     "hip": 26451,
+     "hip": null,
      "hr": 1910,
      "px": [
-      13,
-      92
+      150.6,
+      357.6
      ]
     },
     {
-     "hip": 15900,
+     "hip": null,
      "hr": 1030,
      "px": [
-      399,
-      438
+      917.4,
+      526.6
      ]
     },
     {
-     "hip": 17847,
+     "hip": null,
      "hr": 1178,
      "px": [
-      382,
-      192
+      690.8,
+      214.8
      ]
     }
-   ]
+   ],
+   "source": "hevelius",
+   "credit": "Johannes Hevelius, Uranographia (1690), public domain; scan via Wikimedia Commons (https://commons.wikimedia.org/wiki/File:Taurus_by_Johannes_Hevelius.JPG)"
   },
   "Tel": {
    "file": "constellation_art/telescopium.webp",
@@ -2720,35 +2744,37 @@
   "UMa": {
    "file": "constellation_art/ursa-major.webp",
    "size": [
-    512,
-    512
+    1024,
+    982
    ],
    "anchors": [
     {
-     "hip": 67301,
+     "hip": null,
+     "hr": 4301,
+     "px": [
+      550.8,
+      351.4
+     ]
+    },
+    {
+     "hip": null,
      "hr": 5191,
      "px": [
-      26,
-      75
+      86.0,
+      229.9
      ]
     },
     {
-     "hip": 41704,
-     "hr": 3323,
+     "hip": null,
+     "hr": 4069,
      "px": [
-      452,
-      272
-     ]
-    },
-    {
-     "hip": 50372,
-     "hr": 4033,
-     "px": [
-      258,
-      394
+      530.3,
+      769.0
      ]
     }
-   ]
+   ],
+   "source": "hevelius",
+   "credit": "Johannes Hevelius, Uranographia (1690), public domain; scan via Wikimedia Commons (https://commons.wikimedia.org/wiki/File:Ursa_Major_constellation_-_Johannes_Hevelius_-_1690.jpg)"
   },
   "UMi": {
    "file": "constellation_art/ursa-minor.webp",
@@ -2917,5 +2943,23 @@
     }
    ]
   }
+ },
+ "hevelius": {
+  "credit": "Johannes Hevelius, Firmamentum Sobiescianum sive Uranographia (Gda\u0144sk, 1690). Public domain (PD-old). Flipped from globe view to sky view, background paper removed, aligned to real stars.",
+  "constellations": [
+   "Ori",
+   "Aqr",
+   "Sgr",
+   "Per",
+   "And",
+   "Her",
+   "UMa",
+   "Leo",
+   "Cyg",
+   "Peg",
+   "Tau",
+   "Sco",
+   "Cep"
+  ]
  }
 }

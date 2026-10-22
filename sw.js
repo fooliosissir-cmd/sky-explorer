@@ -1,5 +1,6 @@
 // Sky Explorer offline cache (works in Safari/WebKit and Chrome). Navigations: network first, cached page offline. Data/assets: cache first.
-const CACHE='sky-v14';
+// Sky Explorer 0.9.4-alpha
+const CACHE='sky-v15';
 const CORE=['./','index.html','manifest.webmanifest','stars.json','star-names.json','constellations.json','moon_color_2k.webp','moon_elev_4ppd.webp','icon.svg','icon-192.png','icon-512.png','apple-touch-icon.png','deepsky.json','cards.json','visibility.json','tle-snapshot.txt','constellation_art.json','constellation_anim.json','conart/LICENSE-FreeArtLicense-1.3.txt',
  'tex/earth_clouds.webp','tex/earth_daymap.webp','tex/jupiter.webp','tex/mars.webp','tex/mercury.webp','tex/neptune.webp','tex/saturn.webp','tex/saturn_ring_alpha.webp','tex/sun.webp','tex/uranus.webp','tex/venus_atmosphere.webp'];
 self.addEventListener('install',e=>{self.skipWaiting();e.waitUntil(caches.open(CACHE).then(c=>Promise.all(CORE.map(u=>c.add(new Request(u,{cache:'reload'})).catch(()=>{})))));});
