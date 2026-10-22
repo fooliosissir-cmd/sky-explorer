@@ -1,0 +1,2 @@
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["./web-p6FCbjRk.js","./index-C9gPOCLY.js"])))=>i.map(i=>d[i]);
+import{i as e,t}from"./index-C9gPOCLY.js";var n;(function(e){e[e.Sunday=1]=`Sunday`,e[e.Monday=2]=`Monday`,e[e.Tuesday=3]=`Tuesday`,e[e.Wednesday=4]=`Wednesday`,e[e.Thursday=5]=`Thursday`,e[e.Friday=6]=`Friday`,e[e.Saturday=7]=`Saturday`})(n||={});var r=e(`LocalNotifications`,{web:()=>t(()=>import(`./web-p6FCbjRk.js`).then(e=>new e.LocalNotificationsWeb),__vite__mapDeps([0,1]),import.meta.url)});export{r as LocalNotifications};

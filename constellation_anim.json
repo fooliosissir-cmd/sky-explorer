@@ -1,0 +1,988 @@
+{
+ "version": 1,
+ "global": {
+  "intensity": "slight: max rotation of moving part ~amplitude deg (0 = path/glow only); art opacity 0.25-0.4 at rest",
+  "trigger": "plays on select (once, then loops every period with a 2-4 s idle hold so it is subtle); idle loop only when zoom shows constellation >25% of screen",
+  "loop": "every animation returns exactly to rest pose at t=period (seamless)",
+  "rig": "moving part = art region pivoted at named anchor; implement as mesh-warp/bone on the anchor-warped art quad, lines follow attached stars visually only (star positions never move)",
+  "reduced_motion": "if prefers-reduced-motion or app setting: no movement, no particles; show static art + single 400 ms opacity fade; target arrow/stream shown as static dotted line",
+  "battery": "pause when app hidden; cap 30 fps for anim layer"
+ },
+ "highlight_on_select": {
+  "line_trace_in": {
+   "duration_ms": 900,
+   "easing": "easeOutCubic",
+   "order": "from brightest star outward along lines_hr",
+   "width_px": [
+    1.5,
+    2.5
+   ],
+   "colour": "#9fd3ff"
+  },
+  "star_pulse": {
+   "members": "brighten 1.3x, one 600 ms pulse as trace reaches each"
+  },
+  "glow": {
+   "type": "additive gaussian bloom on lines",
+   "radius_px": 6,
+   "opacity": 0.45
+  },
+  "art_fade": {
+   "from": 0,
+   "to": 0.4,
+   "duration_ms": 1200,
+   "delay_ms": 300,
+   "tint": "warm white #fff4e0, screen blend"
+  },
+  "boundary_fill": {
+   "fill": "#4aa3ff",
+   "opacity": 0.06,
+   "edge": "dashed 1px opacity 0.35",
+   "fade_ms": 600
+  },
+  "label": {
+   "name": "IAU name + English, large, centered on art centroid, fade 500 ms after trace",
+   "dim_others": "other constellations lines to 30%"
+  },
+  "deselect": {
+   "reverse_ms": 500
+  }
+ },
+ "constellations": {
+  "And": {
+   "type": "strain",
+   "moves": "arms + chain links",
+   "story": "Andromeda pulls at her chains; links glint, then she sags back",
+   "amplitude_deg": 3,
+   "period_s": 8,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "target": "Cet",
+   "lore": "Apollodorus II.4.3; Hyginus II.11"
+  },
+  "Ant": {
+   "type": "needle_jitter",
+   "moves": "pump piston",
+   "story": "air-pump piston strokes once, a small puff drifts off",
+   "amplitude_deg": 4,
+   "period_s": 6,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Lacaille, Coelum Australe Stelliferum (1756/1763): instruments of science and art"
+  },
+  "Aps": {
+   "type": "flutter",
+   "moves": "tail plumes",
+   "story": "bird of paradise fans its long tail plumes",
+   "amplitude_deg": 5,
+   "period_s": 7,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Keyser & de Houtman (1595–97), via Plancius and Bayer’s Uranometria (1603)"
+  },
+  "Aql": {
+   "type": "swoop",
+   "moves": "wings + body",
+   "story": "Zeus's eagle beats wings once and glides toward Ganymede (Aquarius)",
+   "amplitude_deg": 6,
+   "period_s": 8,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "target": "Aqr",
+   "lore": "Hyginus II.16 (Ganymede)"
+  },
+  "Aqr": {
+   "type": "pour",
+   "moves": "water jar + stream",
+   "story": "Ganymede, the water-bearer, tips his jar; the stream runs down to the mouth of the Southern Fish (Fomalhaut)",
+   "amplitude_deg": 8,
+   "period_s": 9,
+   "easing": "linear particles",
+   "pivot": "nearest anchor to the moving part",
+   "target": "PsA",
+   "lore": "Hyginus II.29 (Ganymede); Aratus 389–395 (water to the Southern Fish)"
+  },
+  "Ara": {
+   "type": "flicker",
+   "moves": "altar flame",
+   "story": "altar smoke and flame rise upward (toward the Milky Way, as the gods' altar)",
+   "amplitude_deg": 4,
+   "period_s": 5,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Hyginus II.39; Aratus 402–405"
+  },
+  "Ari": {
+   "type": "turn_head",
+   "moves": "head + golden fleece",
+   "story": "ram turns its head back; golden fleece shimmers",
+   "amplitude_deg": 6,
+   "period_s": 8,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Hyginus II.20 (golden fleece)"
+  },
+  "Aur": {
+   "type": "cradle",
+   "moves": "goat (Capella) + kids",
+   "story": "charioteer rocks the she-goat Amalthea and her kids in his arm",
+   "amplitude_deg": 3,
+   "period_s": 8,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Hyginus II.13 (Erichthonius; the goat Amalthea)"
+  },
+  "Boo": {
+   "type": "lead",
+   "moves": "arm + leash to Canes Venatici",
+   "story": "herdsman tugs the hounds' leash, driving the Bear around the pole",
+   "amplitude_deg": 4,
+   "period_s": 8,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "target": "UMa",
+   "lore": "Hyginus II.4; Aratus 91–95"
+  },
+  "CMa": {
+   "type": "chase",
+   "moves": "legs + Sirius",
+   "story": "big dog leaps after the Hare at Orion's feet; Sirius twinkles",
+   "amplitude_deg": 5,
+   "period_s": 7,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "target": "Lep",
+   "lore": "Hyginus II.35 (Laelaps / Orion’s dog)"
+  },
+  "CMi": {
+   "type": "trot",
+   "moves": "legs + tail",
+   "story": "little dog trots at heel, tail wags",
+   "amplitude_deg": 4,
+   "period_s": 5,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "target": "Ori",
+   "lore": "Hyginus II.36"
+  },
+  "CVn": {
+   "type": "bound",
+   "moves": "hound legs",
+   "story": "two hounds strain forward chasing the Great Bear",
+   "amplitude_deg": 4,
+   "period_s": 6,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "target": "UMa",
+   "lore": "Hevelius, Firmamentum Sobiescianum (1690)"
+  },
+  "Cae": {
+   "type": "glint",
+   "moves": "chisel tip",
+   "story": "engraver's chisel taps, a spark flicks off",
+   "amplitude_deg": 3,
+   "period_s": 5,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Lacaille, Coelum Australe Stelliferum (1756/1763): instruments of science and art"
+  },
+  "Cam": {
+   "type": "graze",
+   "moves": "neck + head",
+   "story": "giraffe lowers its long neck and raises it again",
+   "amplitude_deg": 6,
+   "period_s": 9,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Plancius (1613)"
+  },
+  "Cap": {
+   "type": "swim",
+   "moves": "fish tail",
+   "story": "sea-goat (Pan fleeing Typhon into the river) flicks its fish tail",
+   "amplitude_deg": 6,
+   "period_s": 7,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Hyginus II.28 (Pan and Typhon)"
+  },
+  "Car": {
+   "type": "sail",
+   "moves": "keel/hull of Argo",
+   "story": "Argo Navis rocks on a swell; wake ripples behind",
+   "amplitude_deg": 3,
+   "period_s": 10,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Apollonius, Argonautica; Hyginus II.37"
+  },
+  "Cas": {
+   "type": "rock",
+   "moves": "throne",
+   "story": "vain queen tilts in her chair, circling the pole (her punishment)",
+   "amplitude_deg": 4,
+   "period_s": 10,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Hyginus II.10 (set to circle the pole as punishment)"
+  },
+  "Cen": {
+   "type": "aim",
+   "moves": "arms + spear",
+   "story": "Chiron thrusts his spear toward the Wolf on the altar",
+   "amplitude_deg": 5,
+   "period_s": 8,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "target": "Lup",
+   "lore": "Hyginus II.38 (Chiron); Aratus 436–442 (beast on the altar)"
+  },
+  "Cep": {
+   "type": "nod",
+   "moves": "crown + head",
+   "story": "king nods, crown glints, toward his queen Cassiopeia",
+   "amplitude_deg": 3,
+   "period_s": 9,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "target": "Cas",
+   "lore": "Hyginus II.9"
+  },
+  "Cet": {
+   "type": "surface",
+   "moves": "tail + jaws",
+   "story": "sea monster arches up, jaws open toward Andromeda, then dives",
+   "amplitude_deg": 5,
+   "period_s": 9,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "target": "And",
+   "lore": "Apollodorus II.4.3"
+  },
+  "Cha": {
+   "type": "blink",
+   "moves": "eye + tail curl",
+   "story": "chameleon rolls its eye and curls its tail; tint shifts slightly",
+   "amplitude_deg": 3,
+   "period_s": 8,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Keyser & de Houtman (1595–97), via Plancius and Bayer’s Uranometria (1603)"
+  },
+  "Cir": {
+   "type": "swing",
+   "moves": "compass leg",
+   "story": "drafting compass swings an arc, a faint circle traces then fades",
+   "amplitude_deg": 10,
+   "period_s": 7,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Lacaille, Coelum Australe Stelliferum (1756/1763): instruments of science and art"
+  },
+  "Cnc": {
+   "type": "pinch",
+   "moves": "claws",
+   "story": "crab snaps its claws; it scuttles sideways a step and back (Hera's crab nipping Heracles)",
+   "amplitude_deg": 5,
+   "period_s": 6,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "target": "Her",
+   "lore": "Eratosthenes 11; Hyginus II.23 (Hera’s crab)"
+  },
+  "Col": {
+   "type": "fly",
+   "moves": "wings + olive branch",
+   "story": "Noah's dove flutters, olive branch in beak",
+   "amplitude_deg": 6,
+   "period_s": 6,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Plancius (1592): Noah’s dove (Genesis 8)"
+  },
+  "Com": {
+   "type": "wave",
+   "moves": "hair strands",
+   "story": "Queen Berenice's offered tresses ripple as if in a breeze",
+   "amplitude_deg": 3,
+   "period_s": 8,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Callimachus / Catullus 66; made a constellation by Mercator & Brahe"
+  },
+  "CrA": {
+   "type": "shine",
+   "moves": "wreath leaves",
+   "story": "laurel crown glints leaf by leaf around the ring",
+   "amplitude_deg": 2,
+   "period_s": 7,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Ptolemy, Almagest"
+  },
+  "CrB": {
+   "type": "shine",
+   "moves": "gems of the crown",
+   "story": "Ariadne's crown: each jewel lights in sequence round the arc (Gemma brightest)",
+   "amplitude_deg": 2,
+   "period_s": 6,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Hyginus II.5 (Ariadne)"
+  },
+  "Crt": {
+   "type": "tilt",
+   "moves": "cup",
+   "story": "cup tips just out of the crow's reach",
+   "amplitude_deg": 4,
+   "period_s": 6,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "target": "Crv",
+   "lore": "Ovid, Fasti II.243–266"
+  },
+  "Cru": {
+   "type": "glow",
+   "moves": "cross",
+   "story": "Southern Cross brightens arm by arm; a pointer line flicks to the south pole",
+   "amplitude_deg": 2,
+   "period_s": 8,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Royer (1679), from Ptolemy’s Centaurus"
+  },
+  "Crv": {
+   "type": "peck",
+   "moves": "beak + wings",
+   "story": "crow pecks at the Cup it failed to fill for Apollo; cup wobbles",
+   "amplitude_deg": 4,
+   "period_s": 6,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "target": "Crt",
+   "lore": "Ovid, Fasti II.243–266"
+  },
+  "Cyg": {
+   "type": "flap",
+   "moves": "wings",
+   "story": "Zeus as the swan beats his wings once and glides south along the Milky Way",
+   "amplitude_deg": 7,
+   "period_s": 7,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Hyginus II.8 (Zeus and Leda)"
+  },
+  "Del": {
+   "type": "leap",
+   "moves": "body arc",
+   "story": "dolphin leaps out of the Milky Way 'water' and dives back",
+   "amplitude_deg": 8,
+   "period_s": 6,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Hyginus II.17 (Arion / Amphitrite)"
+  },
+  "Dor": {
+   "type": "swim",
+   "moves": "body + fins",
+   "story": "swordfish undulates through the Large Magellanic Cloud",
+   "amplitude_deg": 4,
+   "period_s": 7,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Keyser & de Houtman (1595–97), via Plancius and Bayer’s Uranometria (1603)"
+  },
+  "Dra": {
+   "type": "sway",
+   "moves": "tail coils",
+   "story": "Ladon the dragon slithers its tail, coils shift around the pole; head turns to guard",
+   "amplitude_deg": 5,
+   "period_s": 10,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Hyginus II.3 (Ladon guarding the Hesperides)"
+  },
+  "Equ": {
+   "type": "nod",
+   "moves": "foal head",
+   "story": "little horse tosses its head beside Pegasus",
+   "amplitude_deg": 4,
+   "period_s": 6,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "target": "Peg",
+   "lore": "Geminus/Ptolemy (Equuleus, “little horse”)"
+  },
+  "Eri": {
+   "type": "flow",
+   "moves": "river course",
+   "story": "the river flows: shimmer travels along the line from Orion's foot to Achernar",
+   "amplitude_deg": 0,
+   "period_s": 10,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Hyginus II.32 (Eridanus / Phaethon)"
+  },
+  "For": {
+   "type": "flicker",
+   "moves": "furnace flame",
+   "story": "chemist's furnace flame flickers, small sparks rise",
+   "amplitude_deg": 3,
+   "period_s": 4,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Lacaille, Coelum Australe Stelliferum (1756/1763): instruments of science and art"
+  },
+  "Gem": {
+   "type": "embrace",
+   "moves": "arms of Castor & Pollux",
+   "story": "twins turn to each other and clasp hands (immortal brothers)",
+   "amplitude_deg": 3,
+   "period_s": 9,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Hyginus II.22 (Castor and Pollux)"
+  },
+  "Gru": {
+   "type": "stretch",
+   "moves": "neck + wings",
+   "story": "crane stretches its neck and half-lifts its wings",
+   "amplitude_deg": 5,
+   "period_s": 8,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Keyser & de Houtman (1595–97), via Plancius and Bayer’s Uranometria (1603)"
+  },
+  "Her": {
+   "type": "club",
+   "moves": "club arm",
+   "story": "Heracles raises his club and swings it at the dragon Ladon, then rests",
+   "amplitude_deg": 8,
+   "period_s": 9,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "target": "Dra",
+   "lore": "Hyginus II.6; Eratosthenes 4 (Ladon)"
+  },
+  "Hor": {
+   "type": "tick",
+   "moves": "pendulum",
+   "story": "pendulum clock swings; tick marks pulse",
+   "amplitude_deg": 8,
+   "period_s": 2,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Lacaille, Coelum Australe Stelliferum (1756/1763): instruments of science and art"
+  },
+  "Hya": {
+   "type": "slither",
+   "moves": "body sinuous wave",
+   "story": "the water snake ripples along its length and lifts its head toward the Crow, who blamed it for his lateness (Ovid, Fasti II)",
+   "amplitude_deg": 4,
+   "period_s": 12,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "target": "Crv",
+   "lore": "Ovid, Fasti II.243–266; Eratosthenes 41"
+  },
+  "Hyi": {
+   "type": "slither",
+   "moves": "body",
+   "story": "little water snake wriggles between the Magellanic Clouds",
+   "amplitude_deg": 3,
+   "period_s": 8,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Keyser & de Houtman (1595–97), via Plancius and Bayer’s Uranometria (1603)"
+  },
+  "Ind": {
+   "type": "aim",
+   "moves": "arrows/spear",
+   "story": "Indian (Indigenous man) raises his arrows, scanning the horizon",
+   "amplitude_deg": 4,
+   "period_s": 8,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Keyser & de Houtman (1595–97), via Plancius and Bayer’s Uranometria (1603)"
+  },
+  "LMi": {
+   "type": "flick",
+   "moves": "tail",
+   "story": "lion cub flicks its tail, mimicking Leo",
+   "amplitude_deg": 3,
+   "period_s": 6,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "target": "Leo",
+   "lore": "Hevelius, Firmamentum Sobiescianum (1690)"
+  },
+  "Lac": {
+   "type": "flick",
+   "moves": "tail + tongue",
+   "story": "lizard flicks its tongue and tail",
+   "amplitude_deg": 4,
+   "period_s": 5,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Hevelius, Firmamentum Sobiescianum (1690)"
+  },
+  "Leo": {
+   "type": "roar",
+   "moves": "head + mane + tail",
+   "story": "Nemean lion lifts head and silently roars; mane glow pulses; tail lashes",
+   "amplitude_deg": 4,
+   "period_s": 8,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Hyginus II.24 (Nemean lion)"
+  },
+  "Lep": {
+   "type": "hop",
+   "moves": "legs + ears",
+   "story": "hare crouches and hops, fleeing Orion's hunting dog",
+   "amplitude_deg": 5,
+   "period_s": 6,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "target": "CMa",
+   "lore": "Hyginus II.33"
+  },
+  "Lib": {
+   "type": "balance",
+   "moves": "scale pans",
+   "story": "scales of justice tip and settle level (equinox balance)",
+   "amplitude_deg": 5,
+   "period_s": 8,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Manilius; Roman claws of the Scorpion"
+  },
+  "Lup": {
+   "type": "struggle",
+   "moves": "legs",
+   "story": "wolf twists as Centaurus' spear nears",
+   "amplitude_deg": 3,
+   "period_s": 8,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "target": "Cen",
+   "lore": "Aratus 436–442; Ptolemy (Therion, the beast)"
+  },
+  "Lyn": {
+   "type": "prowl",
+   "moves": "paws",
+   "story": "lynx creeps a step forward and freezes",
+   "amplitude_deg": 3,
+   "period_s": 8,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Hevelius, Firmamentum Sobiescianum (1690)"
+  },
+  "Lyr": {
+   "type": "pluck",
+   "moves": "strings",
+   "story": "Orpheus' lyre: strings vibrate one by one; Vega pulses like a note; faint ripple outward",
+   "amplitude_deg": 2,
+   "period_s": 6,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Hyginus II.7 (Orpheus)"
+  },
+  "Men": {
+   "type": "flat",
+   "moves": "mesa top",
+   "story": "tablecloth cloud drifts over Table Mountain (LMC)",
+   "amplitude_deg": 3,
+   "period_s": 10,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Lacaille, Coelum Australe Stelliferum (1756/1763): instruments of science and art"
+  },
+  "Mic": {
+   "type": "focus",
+   "moves": "tube",
+   "story": "microscope tube slides to focus; glint at lens",
+   "amplitude_deg": 3,
+   "period_s": 7,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Lacaille, Coelum Australe Stelliferum (1756/1763): instruments of science and art"
+  },
+  "Mon": {
+   "type": "rear",
+   "moves": "forelegs + horn",
+   "story": "unicorn rears up; horn glints",
+   "amplitude_deg": 5,
+   "period_s": 8,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Plancius (1612)"
+  },
+  "Mus": {
+   "type": "buzz",
+   "moves": "wings",
+   "story": "fly buzzes its wings, tiny jitter",
+   "amplitude_deg": 2,
+   "period_s": 3,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Keyser & de Houtman (1595–97), via Plancius and Bayer’s Uranometria (1603)"
+  },
+  "Nor": {
+   "type": "swing",
+   "moves": "square arm",
+   "story": "carpenter's square pivots to true",
+   "amplitude_deg": 5,
+   "period_s": 7,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Lacaille, Coelum Australe Stelliferum (1756/1763): instruments of science and art"
+  },
+  "Oct": {
+   "type": "swing",
+   "moves": "index arm",
+   "story": "octant arm sweeps, sighting the south pole",
+   "amplitude_deg": 6,
+   "period_s": 8,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Lacaille, Coelum Australe Stelliferum (1756/1763): instruments of science and art"
+  },
+  "Oph": {
+   "type": "wrestle",
+   "moves": "arms + Serpens body",
+   "story": "Ophiuchus grips the serpent; the snake writhes in his hands (Asclepius)",
+   "amplitude_deg": 4,
+   "period_s": 9,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Hyginus II.14 (Asclepius)"
+  },
+  "Ori": {
+   "type": "raise_shield",
+   "moves": "club arm + lion-skin shield",
+   "story": "Orion raises his club and braces his lion-skin shield against charging Taurus; as Scorpius rises he turns away (he sets as the Scorpion rises)",
+   "amplitude_deg": 6,
+   "period_s": 8,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "target": "Tau",
+   "lore": "Hyginus, De Astronomica II.26 & 34; Aratus, Phaenomena 634–646 (sets as Scorpius rises)"
+  },
+  "Pav": {
+   "type": "fan",
+   "moves": "tail eyes",
+   "story": "peacock spreads its tail; Argus' eyes shimmer",
+   "amplitude_deg": 6,
+   "period_s": 9,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Keyser & de Houtman (1595–97), via Plancius and Bayer’s Uranometria (1603)"
+  },
+  "Peg": {
+   "type": "gallop",
+   "moves": "wings + forelegs",
+   "story": "Pegasus beats its wings and paws the air",
+   "amplitude_deg": 6,
+   "period_s": 8,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Hesiod, Theogony 280–286; Hyginus II.18"
+  },
+  "Per": {
+   "type": "raise",
+   "moves": "sword arm + Medusa head",
+   "story": "Perseus lifts Medusa's severed head; Algol, her eye, dims and brightens (the Demon Star), as he flies to save Andromeda from Cetus",
+   "amplitude_deg": 4,
+   "period_s": 9,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "target": "Cet",
+   "lore": "Ovid, Metamorphoses IV–V; Hyginus II.12; Algol = Ra's al-Ghul, \"the Demon's head\"",
+   "blink_star_hr": 936
+  },
+  "Phe": {
+   "type": "rebirth",
+   "moves": "wings + flames",
+   "story": "phoenix flares in flame and spreads its wings, reborn",
+   "amplitude_deg": 5,
+   "period_s": 10,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Keyser & de Houtman (1595–97), via Plancius and Bayer’s Uranometria (1603)"
+  },
+  "Pic": {
+   "type": "pan",
+   "moves": "easel",
+   "story": "painter's easel; a brushstroke appears and fades",
+   "amplitude_deg": 3,
+   "period_s": 8,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Lacaille, Coelum Australe Stelliferum (1756/1763): instruments of science and art"
+  },
+  "PsA": {
+   "type": "gulp",
+   "moves": "mouth",
+   "story": "Southern Fish opens its mouth to drink Aquarius' stream; Fomalhaut sparkles",
+   "amplitude_deg": 3,
+   "period_s": 9,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "target": "Aqr",
+   "lore": "Hyginus II.41; Aratus 386–390"
+  },
+  "Psc": {
+   "type": "swim",
+   "moves": "two fish + cord",
+   "story": "the two fish (Aphrodite and Eros fleeing Typhon) swim apart, cord tightens, swim back",
+   "amplitude_deg": 5,
+   "period_s": 10,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Ovid, Fasti II.457–474"
+  },
+  "Pup": {
+   "type": "sail",
+   "moves": "stern (Argo)",
+   "story": "Argo's stern rises on the swell (shared Argo Navis art)",
+   "amplitude_deg": 3,
+   "period_s": 10,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Hyginus II.37 (Argo)"
+  },
+  "Pyx": {
+   "type": "spin",
+   "moves": "needle",
+   "story": "ship's compass needle quivers and settles north",
+   "amplitude_deg": 8,
+   "period_s": 6,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Lacaille, Coelum Australe Stelliferum (1756/1763): instruments of science and art"
+  },
+  "Ret": {
+   "type": "pulse",
+   "moves": "reticle cross-hairs",
+   "story": "eyepiece reticle pulses and recentres",
+   "amplitude_deg": 2,
+   "period_s": 6,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Lacaille, Coelum Australe Stelliferum (1756/1763): instruments of science and art"
+  },
+  "Scl": {
+   "type": "chisel",
+   "moves": "chisel",
+   "story": "sculptor's chisel taps the bust; chip flies",
+   "amplitude_deg": 3,
+   "period_s": 5,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Lacaille, Coelum Australe Stelliferum (1756/1763): instruments of science and art"
+  },
+  "Sco": {
+   "type": "strike",
+   "moves": "tail + stinger",
+   "story": "scorpion arches and flicks its stinger toward Orion (who sets as it rises)",
+   "amplitude_deg": 6,
+   "period_s": 8,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "target": "Ori",
+   "lore": "Hyginus II.26; Aratus 634–646"
+  },
+  "Sct": {
+   "type": "glint",
+   "moves": "shield face",
+   "story": "Sobieski's shield flashes across its face",
+   "amplitude_deg": 2,
+   "period_s": 7,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Hevelius, Firmamentum Sobiescianum (1690)"
+  },
+  "Ser": {
+   "type": "slither",
+   "moves": "Serpens Caput + Cauda",
+   "story": "serpent writhes in Ophiuchus' grip (shared Ophiuchus art)",
+   "amplitude_deg": 4,
+   "period_s": 9,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "target": "Oph",
+   "lore": "Hyginus II.14"
+  },
+  "Sex": {
+   "type": "sight",
+   "moves": "arm",
+   "story": "sextant arm swings to take a sight",
+   "amplitude_deg": 5,
+   "period_s": 8,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Hevelius, Firmamentum Sobiescianum (1690)"
+  },
+  "Sge": {
+   "type": "fly",
+   "moves": "arrow",
+   "story": "arrow (Apollo's, that killed the Cyclopes) drifts a little forward along its shaft",
+   "amplitude_deg": 3,
+   "period_s": 6,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Eratosthenes 29; Hyginus II.15"
+  },
+  "Sgr": {
+   "type": "shoot",
+   "moves": "bow arm + arrow",
+   "story": "centaur archer draws bow, looses arrow: arrow streaks to Antares, the Scorpion's heart, fades; bow reloads",
+   "amplitude_deg": 0,
+   "period_s": 10,
+   "easing": "easeInQuad draw -> instant release -> easeOutCubic flight",
+   "pivot": "nearest anchor to the moving part",
+   "target": "Sco",
+   "phases": [
+    {
+     "t": "0-2.5s",
+     "do": "draw bow: bow arm pulls back ~4 deg, string bends"
+    },
+    {
+     "t": "2.5s",
+     "do": "release: string snaps"
+    },
+    {
+     "t": "2.5-4.5s",
+     "do": "arrow sprite flies along great circle from arrow tip (Kaus Australis area) to Antares (HR 6134); thin fading trail"
+    },
+    {
+     "t": "4.5s",
+     "do": "Antares flashes 1.5x for 300 ms; arrow fades"
+    },
+    {
+     "t": "4.5-7s",
+     "do": "bow arm relaxes, new arrow fades in (reload)"
+    },
+    {
+     "t": "7-10s",
+     "do": "hold"
+    }
+   ],
+   "target_star_hr": 6134,
+   "lore": "Eratosthenes, Catasterismi 28; Manilius; aims at Antares (Aratus 300–310)"
+  },
+  "Tau": {
+   "type": "charge",
+   "moves": "head + horns",
+   "story": "bull lowers its horns and charges at Orion; Aldebaran glows red like an angry eye",
+   "amplitude_deg": 5,
+   "period_s": 8,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "target": "Ori",
+   "lore": "Ovid, Metamorphoses II.833–875 (Zeus and Europa); Aratus (Orion faces the Bull)"
+  },
+  "Tel": {
+   "type": "pan",
+   "moves": "tube",
+   "story": "telescope tube tilts and a lens glint",
+   "amplitude_deg": 3,
+   "period_s": 8,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Lacaille, Coelum Australe Stelliferum (1756/1763): instruments of science and art"
+  },
+  "Tra": {
+   "type": "glint",
+   "moves": "edges",
+   "story": "southern triangle edges trace and glint",
+   "amplitude_deg": 2,
+   "period_s": 6,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Keyser & de Houtman (1595–97), via Plancius and Bayer’s Uranometria (1603)"
+  },
+  "Tri": {
+   "type": "glint",
+   "moves": "edges",
+   "story": "triangle edges trace, apex glints",
+   "amplitude_deg": 2,
+   "period_s": 6,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Hyginus II.19"
+  },
+  "Tuc": {
+   "type": "nod",
+   "moves": "big beak",
+   "story": "toucan bobs its big beak by the Small Magellanic Cloud",
+   "amplitude_deg": 4,
+   "period_s": 6,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Keyser & de Houtman (1595–97), via Plancius and Bayer’s Uranometria (1603)"
+  },
+  "UMa": {
+   "type": "lumber",
+   "moves": "legs + long tail",
+   "story": "Callisto as Great Bear lumbers around the pole; tail swings (the Dipper handle)",
+   "amplitude_deg": 3,
+   "period_s": 10,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Ovid, Metamorphoses II.401–530; Fasti II.153–192 (Callisto)"
+  },
+  "UMi": {
+   "type": "swish",
+   "moves": "tail",
+   "story": "little bear (Arcas) swishes its tail; Polaris stays perfectly still and glows",
+   "amplitude_deg": 3,
+   "period_s": 10,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Ovid, Fasti II (Arcas)"
+  },
+  "Vel": {
+   "type": "billow",
+   "moves": "sails (Argo)",
+   "story": "Argo's sails billow in the wind (shared Argo Navis art)",
+   "amplitude_deg": 3,
+   "period_s": 10,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Hyginus II.37 (Argo)"
+  },
+  "Vir": {
+   "type": "scatter",
+   "moves": "hand + wheat ear",
+   "story": "Virgin raises the ear of wheat; Spica sparkles, grains drift down (harvest)",
+   "amplitude_deg": 3,
+   "period_s": 9,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Aratus 96–136 (Dike/Astraea); Hyginus II.25"
+  },
+  "Vol": {
+   "type": "jump",
+   "moves": "fins",
+   "story": "flying fish leaps and glides on its fins",
+   "amplitude_deg": 6,
+   "period_s": 6,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Keyser & de Houtman (1595–97), via Plancius and Bayer’s Uranometria (1603)"
+  },
+  "Vul": {
+   "type": "carry",
+   "moves": "fox + goose",
+   "story": "little fox trots, goose in jaws",
+   "amplitude_deg": 3,
+   "period_s": 7,
+   "easing": "easeInOutSine",
+   "pivot": "nearest anchor to the moving part",
+   "lore": "Hevelius, Firmamentum Sobiescianum (1690)"
+  }
+ },
+ "lore_note": "Animations follow the classical myth for Ptolemy’s 48 (Eratosthenes, Hyginus, Aratus, Ovid) and the naming source for the modern 40."
+}

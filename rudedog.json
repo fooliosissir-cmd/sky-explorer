@@ -1,0 +1,258 @@
+{
+ "source": "Quests Tester data/rude_dog/rude_dog.json",
+ "lines": [
+  [
+   285,
+   1317,
+   1523,
+   2742,
+   2401,
+   3082,
+   2527,
+   2165,
+   2293,
+   2264,
+   2487,
+   2751
+  ],
+  [
+   285,
+   1230,
+   1643,
+   1138,
+   1527,
+   1466,
+   1314
+  ],
+  [
+   2293,
+   2029,
+   1637
+  ]
+ ],
+ "stars": [
+  {
+   "hr": 285,
+   "raDeg": 17.18625,
+   "decDeg": 86.256944,
+   "vmag": 4.25,
+   "part": "nose tip (points at Polaris)",
+   "key": "N"
+  },
+  {
+   "hr": 1317,
+   "raDeg": 66.761667,
+   "decDeg": 80.824167,
+   "vmag": 5.43,
+   "part": "forehead",
+   "key": "FH"
+  },
+  {
+   "hr": 1523,
+   "raDeg": 75.08625,
+   "decDeg": 81.193889,
+   "vmag": 5.07,
+   "part": "front of ear",
+   "key": "EF"
+  },
+  {
+   "hr": 2742,
+   "raDeg": 112.768333,
+   "decDeg": 82.411389,
+   "vmag": 4.96,
+   "part": "first ear tip",
+   "key": "E1"
+  },
+  {
+   "hr": 2401,
+   "raDeg": 101.55875,
+   "decDeg": 79.564722,
+   "vmag": 5.45,
+   "part": "notch between ears",
+   "key": "EN"
+  },
+  {
+   "hr": 3082,
+   "raDeg": 121.19625,
+   "decDeg": 79.479722,
+   "vmag": 5.42,
+   "part": "second ear tip",
+   "key": "E2"
+  },
+  {
+   "hr": 2527,
+   "raDeg": 105.016667,
+   "decDeg": 76.9775,
+   "vmag": 4.55,
+   "part": "nape",
+   "key": "NP"
+  },
+  {
+   "hr": 2165,
+   "raDeg": 93.212917,
+   "decDeg": 65.718333,
+   "vmag": 5.32,
+   "part": "back",
+   "key": "BK"
+  },
+  {
+   "hr": 2293,
+   "raDeg": 96.70375,
+   "decDeg": 58.417222,
+   "vmag": 5.21,
+   "part": "rump",
+   "key": "RU"
+  },
+  {
+   "hr": 2264,
+   "raDeg": 95.442083,
+   "decDeg": 53.452222,
+   "vmag": 5.36,
+   "part": "tail base",
+   "key": "TB"
+  },
+  {
+   "hr": 2487,
+   "raDeg": 101.915,
+   "decDeg": 48.789444,
+   "vmag": 5.22,
+   "part": "tail (curled on the ground)",
+   "key": "TM"
+  },
+  {
+   "hr": 2751,
+   "raDeg": 109.632917,
+   "decDeg": 49.465,
+   "vmag": 5.05,
+   "part": "tail tip",
+   "key": "TT"
+  },
+  {
+   "hr": 1230,
+   "raDeg": 62.511667,
+   "decDeg": 80.698611,
+   "vmag": 5.1,
+   "part": "lower jaw",
+   "key": "J"
+  },
+  {
+   "hr": 1643,
+   "raDeg": 78.093333,
+   "decDeg": 73.946667,
+   "vmag": 5.43,
+   "part": "throat",
+   "key": "T"
+  },
+  {
+   "hr": 1138,
+   "raDeg": 57.3075,
+   "decDeg": 70.871111,
+   "vmag": 5.44,
+   "part": "chest",
+   "key": "C"
+  },
+  {
+   "hr": 1527,
+   "raDeg": 73.021667,
+   "decDeg": 63.505278,
+   "vmag": 5.44,
+   "part": "top of front leg",
+   "key": "LT"
+  },
+  {
+   "hr": 1466,
+   "raDeg": 69.992083,
+   "decDeg": 53.473056,
+   "vmag": 5.35,
+   "part": "front paw",
+   "key": "FP"
+  },
+  {
+   "hr": 1314,
+   "raDeg": 64.179583,
+   "decDeg": 53.611944,
+   "vmag": 5.19,
+   "part": "toes",
+   "key": "TO"
+  },
+  {
+   "hr": 2029,
+   "raDeg": 88.711667,
+   "decDeg": 55.706944,
+   "vmag": 4.99,
+   "part": "hind knee/haunch",
+   "key": "KN"
+  },
+  {
+   "hr": 1637,
+   "raDeg": 76.669167,
+   "decDeg": 51.597778,
+   "vmag": 5.0,
+   "part": "hind paw",
+   "key": "HP"
+  }
+ ],
+ "art": {
+  "file": "rudedog/art.webp",
+  "size": [
+   512,
+   512
+  ],
+  "anchors": [
+   {
+    "hr": 285,
+    "px": [
+     85.5,
+     39.0
+    ]
+   },
+   {
+    "hr": 2751,
+    "px": [
+     451.7,
+     412.8
+    ]
+   },
+   {
+    "hr": 1466,
+    "px": [
+     139.5,
+     470.6
+    ]
+   }
+  ]
+ },
+ "card": [
+  "A constellation for Dad. Not one of the 88 official constellations.",
+  "Close to the North Star, a wolf sits on his haunches with his nose raised to Polaris, howling. Rude Dog is named for Dad: loyal, loud when it counts, and always looking up. His stars are faint, so find a dark spot and give your eyes 20 minutes. Once you see him, you won't forget him.",
+  "20 stars, all between magnitude 4.25 and 5.45, so they need a dark sky. His nose (HR 285, mag 4.25) sits just 3\u00b0 from Polaris.",
+  "He never sets from 43\u00b0N; every star is circumpolar. He is highest on January\u2013February evenings (about 9 pm), high in the north above Polaris, but then he hangs upside down with his nose pointing down at the Pole Star. He sits upright, nose up toward Polaris, on late-summer evenings (August\u2013September after dark), low in the north just above the horizon. That is the classic 'howling wolf' view, if your northern horizon is clear and dark. On October\u2013November evenings he climbs the northeast sky on his side.",
+  "Find Polaris, then Capella, the bright yellow star that is high on winter evenings. The wolf fills the dim gap between them (the constellation Camelopardalis). His nose almost touches Polaris, his ears lie just beside it toward Capella, his back runs down toward Capella, and his paws and curled tail rest just north of Capella and Menkalinan. Binoculars help with the faintest stars.",
+  "Not visible from mid-southern latitudes. The whole wolf clears the horizon only north of about 4\u00b0S, because his nose is at Dec +86\u00b0. From 35\u00b0S at most his tail and hind paw peek above the northern horizon."
+ ],
+ "aliases": [
+  "Rude Dog",
+  "Howling Wolf"
+ ],
+ "sound": {
+  "files": {
+   "ogg": "rude_dog/howl.ogg",
+   "mp3": "rude_dog/howl.mp3"
+  },
+  "duration_s": 2.5,
+  "volume": 0.35,
+  "loudness": "normalised to -24 LUFS, true peak -3 dBTP",
+  "play_on": [
+   "select",
+   "tap",
+   "animation howl phase"
+  ],
+  "respect": [
+   "app mute",
+   "system silent mode",
+   "sun <= -12\u00b0 gate"
+  ],
+  "cooldown_s": 10,
+  "source": "Synthesised in code (rude_dog/build.py: pitch glide with harmonics, vibrato, breath noise and a short reverb). Original work, no third-party licence."
+ }
+}

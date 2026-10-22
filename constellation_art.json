@@ -1,0 +1,2921 @@
+{
+ "source": "Stellarium skycultures 'western' (github.com/Stellarium/stellarium-skycultures, western/index.json + illustrations/)",
+ "licence": "Free Art License 1.3 (artlibre.org/licence/lal/en) - see constellation_art/LICENSE-FreeArtLicense-1.3.txt",
+ "credit": "Constellation illustrations by Johan Meuris, from Stellarium (stellarium.org), Free Art License 1.3.",
+ "warp": "affine map from 3 anchors: image px (pos, origin top-left, image 'size') -> star sky positions; Stellarium-style",
+ "constellations": {
+  "And": {
+   "file": "constellation_art/andromeda.webp",
+   "size": [
+    512,
+    512
+   ],
+   "anchors": [
+    {
+     "hip": 3881,
+     "hr": 226,
+     "px": [
+      198,
+      215
+     ]
+    },
+    {
+     "hip": 3092,
+     "hr": 165,
+     "px": [
+      337,
+      136
+     ]
+    },
+    {
+     "hip": 9640,
+     "hr": 603,
+     "px": [
+      224,
+      428
+     ]
+    }
+   ]
+  },
+  "Ant": {
+   "file": "constellation_art/antlia.webp",
+   "size": [
+    128,
+    128
+   ],
+   "anchors": [
+    {
+     "hip": 51172,
+     "hr": 4104,
+     "px": [
+      4,
+      84
+     ]
+    },
+    {
+     "hip": 47758,
+     "hr": 3871,
+     "px": [
+      72,
+      69
+     ]
+    },
+    {
+     "hip": 48926,
+     "hr": 3947,
+     "px": [
+      42,
+      120
+     ]
+    }
+   ]
+  },
+  "Aps": {
+   "file": "constellation_art/apus.webp",
+   "size": [
+    256,
+    256
+   ],
+   "anchors": [
+    {
+     "hip": 81852,
+     "hr": 6163,
+     "px": [
+      66,
+      60
+     ]
+    },
+    {
+     "hip": 81065,
+     "hr": 6102,
+     "px": [
+      76,
+      87
+     ]
+    },
+    {
+     "hip": 72370,
+     "hr": 5470,
+     "px": [
+      163,
+      110
+     ]
+    }
+   ]
+  },
+  "Aql": {
+   "file": "constellation_art/aquila.webp",
+   "size": [
+    512,
+    512
+   ],
+   "anchors": [
+    {
+     "hip": 97649,
+     "hr": 7557,
+     "px": [
+      163,
+      232
+     ]
+    },
+    {
+     "hip": 93244,
+     "hr": 7176,
+     "px": [
+      385,
+      131
+     ]
+    },
+    {
+     "hip": 93805,
+     "hr": 7236,
+     "px": [
+      397,
+      397
+     ]
+    }
+   ]
+  },
+  "Aqr": {
+   "file": "constellation_art/aquarius.webp",
+   "size": [
+    512,
+    512
+   ],
+   "anchors": [
+    {
+     "hip": 115438,
+     "hr": 8892,
+     "px": [
+      144,
+      464
+     ]
+    },
+    {
+     "hip": 109074,
+     "hr": 8414,
+     "px": [
+      179,
+      98
+     ]
+    },
+    {
+     "hip": 102618,
+     "hr": 7950,
+     "px": [
+      465,
+      49
+     ]
+    }
+   ]
+  },
+  "Ara": {
+   "file": "constellation_art/ara.webp",
+   "size": [
+    256,
+    256
+   ],
+   "anchors": [
+    {
+     "hip": 83081,
+     "hr": 6285,
+     "px": [
+      98,
+      70
+     ]
+    },
+    {
+     "hip": 85727,
+     "hr": 6500,
+     "px": [
+      191,
+      93
+     ]
+    },
+    {
+     "hip": 88714,
+     "hr": 6743,
+     "px": [
+      107,
+      249
+     ]
+    }
+   ]
+  },
+  "Ari": {
+   "file": "constellation_art/aries.webp",
+   "size": [
+    256,
+    256
+   ],
+   "anchors": [
+    {
+     "hip": 13209,
+     "hr": 838,
+     "px": [
+      12,
+      130
+     ]
+    },
+    {
+     "hip": 13914,
+     "hr": 887,
+     "px": [
+      58,
+      206
+     ]
+    },
+    {
+     "hip": 8832,
+     "hr": 546,
+     "px": [
+      210,
+      47
+     ]
+    }
+   ]
+  },
+  "Aur": {
+   "file": "constellation_art/auriga.webp",
+   "size": [
+    512,
+    512
+   ],
+   "anchors": [
+    {
+     "hip": 28380,
+     "hr": 2095,
+     "px": [
+      196,
+      189
+     ]
+    },
+    {
+     "hip": 24608,
+     "hr": 1708,
+     "px": [
+      419,
+      208
+     ]
+    },
+    {
+     "hip": 23015,
+     "hr": 1577,
+     "px": [
+      290,
+      423
+     ]
+    }
+   ]
+  },
+  "Boo": {
+   "file": "constellation_art/bootes.webp",
+   "size": [
+    512,
+    512
+   ],
+   "anchors": [
+    {
+     "hip": 72105,
+     "hr": 5505,
+     "px": [
+      225,
+      222
+     ]
+    },
+    {
+     "hip": 71075,
+     "hr": 5435,
+     "px": [
+      365,
+      184
+     ]
+    },
+    {
+     "hip": 67927,
+     "hr": 5235,
+     "px": [
+      207,
+      401
+     ]
+    }
+   ]
+  },
+  "CMa": {
+   "file": "constellation_art/canis-major.webp",
+   "size": [
+    512,
+    512
+   ],
+   "anchors": [
+    {
+     "hip": 35904,
+     "hr": 2827,
+     "px": [
+      21,
+      347
+     ]
+    },
+    {
+     "hip": 33160,
+     "hr": 2574,
+     "px": [
+      321,
+      24
+     ]
+    },
+    {
+     "hip": 30122,
+     "hr": 2282,
+     "px": [
+      318,
+      492
+     ]
+    }
+   ]
+  },
+  "CMi": {
+   "file": "constellation_art/canis-minor.webp",
+   "size": [
+    256,
+    256
+   ],
+   "anchors": [
+    {
+     "hip": 37921,
+     "hr": 3008,
+     "px": [
+      96,
+      43
+     ]
+    },
+    {
+     "hip": 37279,
+     "hr": 2943,
+     "px": [
+      101,
+      171
+     ]
+    },
+    {
+     "hip": 36188,
+     "hr": 2845,
+     "px": [
+      184,
+      124
+     ]
+    }
+   ]
+  },
+  "CVn": {
+   "file": "constellation_art/canes-venatici.webp",
+   "size": [
+    256,
+    256
+   ],
+   "anchors": [
+    {
+     "hip": 63901,
+     "hr": 4943,
+     "px": [
+      117,
+      113
+     ]
+    },
+    {
+     "hip": 61317,
+     "hr": 4785,
+     "px": [
+      206,
+      40
+     ]
+    },
+    {
+     "hip": 61309,
+     "hr": 4783,
+     "px": [
+      207,
+      152
+     ]
+    }
+   ]
+  },
+  "Cae": {
+   "file": "constellation_art/caelum.webp",
+   "size": [
+    256,
+    256
+   ],
+   "anchors": [
+    {
+     "hip": 21060,
+     "hr": 1443,
+     "px": [
+      16,
+      231
+     ]
+    },
+    {
+     "hip": 21770,
+     "hr": 1502,
+     "px": [
+      76,
+      145
+     ]
+    },
+    {
+     "hip": 21861,
+     "hr": 1503,
+     "px": [
+      199,
+      75
+     ]
+    }
+   ]
+  },
+  "Cam": {
+   "file": "constellation_art/camelopardalis.webp",
+   "size": [
+    256,
+    256
+   ],
+   "anchors": [
+    {
+     "hip": 25110,
+     "hr": 1686,
+     "px": [
+      77,
+      46
+     ]
+    },
+    {
+     "hip": 22783,
+     "hr": 1542,
+     "px": [
+      128,
+      135
+     ]
+    },
+    {
+     "hip": 16228,
+     "hr": 1035,
+     "px": [
+      219,
+      136
+     ]
+    }
+   ]
+  },
+  "Cap": {
+   "file": "constellation_art/capricornus.webp",
+   "size": [
+    512,
+    512
+   ],
+   "anchors": [
+    {
+     "hip": 107556,
+     "hr": 8322,
+     "px": [
+      15,
+      436
+     ]
+    },
+    {
+     "hip": 100064,
+     "hr": 7754,
+     "px": [
+      403,
+      7
+     ]
+    },
+    {
+     "hip": 102978,
+     "hr": 7980,
+     "px": [
+      460,
+      438
+     ]
+    }
+   ]
+  },
+  "Car": {
+   "file": "constellation_art/argonavis.webp",
+   "size": [
+    512,
+    512
+   ],
+   "anchors": [
+    {
+     "hip": 45238,
+     "hr": 3685,
+     "px": [
+      202,
+      455
+     ]
+    },
+    {
+     "hip": 50191,
+     "hr": 4023,
+     "px": [
+      62,
+      216
+     ]
+    },
+    {
+     "hip": 39757,
+     "hr": 3185,
+     "px": [
+      298,
+      22
+     ]
+    }
+   ]
+  },
+  "Cas": {
+   "file": "constellation_art/cassiopeia.webp",
+   "size": [
+    512,
+    512
+   ],
+   "anchors": [
+    {
+     "hip": 8886,
+     "hr": 542,
+     "px": [
+      390,
+      336
+     ]
+    },
+    {
+     "hip": 3179,
+     "hr": 168,
+     "px": [
+      163,
+      156
+     ]
+    },
+    {
+     "hip": 746,
+     "hr": 21,
+     "px": [
+      73,
+      243
+     ]
+    }
+   ]
+  },
+  "Cen": {
+   "file": "constellation_art/centaurus.webp",
+   "size": [
+    512,
+    512
+   ],
+   "anchors": [
+    {
+     "hip": 68933,
+     "hr": 5288,
+     "px": [
+      118,
+      157
+     ]
+    },
+    {
+     "hip": 71683,
+     "hr": 5459,
+     "px": [
+      194,
+      444
+     ]
+    },
+    {
+     "hip": 56561,
+     "hr": 4467,
+     "px": [
+      463,
+      412
+     ]
+    }
+   ]
+  },
+  "Cep": {
+   "file": "constellation_art/cepheus.webp",
+   "size": [
+    512,
+    512
+   ],
+   "anchors": [
+    {
+     "hip": 116727,
+     "hr": 8974,
+     "px": [
+      60,
+      335
+     ]
+    },
+    {
+     "hip": 106032,
+     "hr": 8238,
+     "px": [
+      125,
+      170
+     ]
+    },
+    {
+     "hip": 109492,
+     "hr": 8465,
+     "px": [
+      335,
+      147
+     ]
+    }
+   ]
+  },
+  "Cet": {
+   "file": "constellation_art/cetus.webp",
+   "size": [
+    512,
+    512
+   ],
+   "anchors": [
+    {
+     "hip": 14143,
+     "hr": 910,
+     "px": [
+      87,
+      63
+     ]
+    },
+    {
+     "hip": 12770,
+     "hr": 811,
+     "px": [
+      28,
+      274
+     ]
+    },
+    {
+     "hip": 1562,
+     "hr": 74,
+     "px": [
+      412,
+      440
+     ]
+    }
+   ]
+  },
+  "Cha": {
+   "file": "constellation_art/chamaeleon.webp",
+   "size": [
+    256,
+    256
+   ],
+   "anchors": [
+    {
+     "hip": 60000,
+     "hr": 4674,
+     "px": [
+      29,
+      214
+     ]
+    },
+    {
+     "hip": 51839,
+     "hr": 4174,
+     "px": [
+      73,
+      123
+     ]
+    },
+    {
+     "hip": 40702,
+     "hr": 3318,
+     "px": [
+      184,
+      33
+     ]
+    }
+   ]
+  },
+  "Cir": {
+   "file": "constellation_art/circinus.webp",
+   "size": [
+    256,
+    256
+   ],
+   "anchors": [
+    {
+     "hip": 75323,
+     "hr": 5704,
+     "px": [
+      5,
+      36
+     ]
+    },
+    {
+     "hip": 74824,
+     "hr": 5670,
+     "px": [
+      39,
+      11
+     ]
+    },
+    {
+     "hip": 71908,
+     "hr": 5463,
+     "px": [
+      235,
+      239
+     ]
+    }
+   ]
+  },
+  "Cnc": {
+   "file": "constellation_art/cancer.webp",
+   "size": [
+    256,
+    256
+   ],
+   "anchors": [
+    {
+     "hip": 44066,
+     "hr": 3572,
+     "px": [
+      29,
+      166
+     ]
+    },
+    {
+     "hip": 40526,
+     "hr": 3249,
+     "px": [
+      101,
+      255
+     ]
+    },
+    {
+     "hip": 40843,
+     "hr": 3262,
+     "px": [
+      206,
+      91
+     ]
+    }
+   ]
+  },
+  "Col": {
+   "file": "constellation_art/columba.webp",
+   "size": [
+    256,
+    256
+   ],
+   "anchors": [
+    {
+     "hip": 30277,
+     "hr": 2296,
+     "px": [
+      139,
+      29
+     ]
+    },
+    {
+     "hip": 28328,
+     "hr": 2120,
+     "px": [
+      40,
+      190
+     ]
+    },
+    {
+     "hip": 25859,
+     "hr": 1862,
+     "px": [
+      204,
+      211
+     ]
+    }
+   ]
+  },
+  "Com": {
+   "file": "constellation_art/coma-berenices.webp",
+   "size": [
+    256,
+    256
+   ],
+   "anchors": [
+    {
+     "hip": 64241,
+     "hr": 4968,
+     "px": [
+      27,
+      199
+     ]
+    },
+    {
+     "hip": 64394,
+     "hr": 4983,
+     "px": [
+      38,
+      58
+     ]
+    },
+    {
+     "hip": 60742,
+     "hr": 4737,
+     "px": [
+      172,
+      64
+     ]
+    }
+   ]
+  },
+  "CrA": {
+   "file": "constellation_art/corona-australis.webp",
+   "size": [
+    256,
+    256
+   ],
+   "anchors": [
+    {
+     "hip": 93825,
+     "hr": 7226,
+     "px": [
+      14,
+      142
+     ]
+    },
+    {
+     "hip": 90887,
+     "hr": 6942,
+     "px": [
+      218,
+      34
+     ]
+    },
+    {
+     "hip": 92953,
+     "hr": 7122,
+     "px": [
+      195,
+      208
+     ]
+    }
+   ]
+  },
+  "CrB": {
+   "file": "constellation_art/corona-borealis.webp",
+   "size": [
+    256,
+    256
+   ],
+   "anchors": [
+    {
+     "hip": 78493,
+     "hr": 5971,
+     "px": [
+      16,
+      186
+     ]
+    },
+    {
+     "hip": 76952,
+     "hr": 5849,
+     "px": [
+      201,
+      203
+     ]
+    },
+    {
+     "hip": 76127,
+     "hr": 5778,
+     "px": [
+      157,
+      20
+     ]
+    }
+   ]
+  },
+  "Crt": {
+   "file": "constellation_art/crater.webp",
+   "size": [
+    256,
+    256
+   ],
+   "anchors": [
+    {
+     "hip": 58188,
+     "hr": 4567,
+     "px": [
+      45,
+      41
+     ]
+    },
+    {
+     "hip": 55282,
+     "hr": 4382,
+     "px": [
+      160,
+      149
+     ]
+    },
+    {
+     "hip": 54682,
+     "hr": 4343,
+     "px": [
+      55,
+      242
+     ]
+    }
+   ]
+  },
+  "Cru": {
+   "file": "constellation_art/crux.webp",
+   "size": [
+    128,
+    128
+   ],
+   "anchors": [
+    {
+     "hip": 61084,
+     "hr": 4763,
+     "px": [
+      112,
+      21
+     ]
+    },
+    {
+     "hip": 62434,
+     "hr": 4853,
+     "px": [
+      42,
+      20
+     ]
+    },
+    {
+     "hip": 60718,
+     "hr": 4730,
+     "px": [
+      21,
+      106
+     ]
+    }
+   ]
+  },
+  "Crv": {
+   "file": "constellation_art/corvus.webp",
+   "size": [
+    256,
+    256
+   ],
+   "anchors": [
+    {
+     "hip": 60965,
+     "hr": 4757,
+     "px": [
+      65,
+      59
+     ]
+    },
+    {
+     "hip": 61359,
+     "hr": 4786,
+     "px": [
+      77,
+      235
+     ]
+    },
+    {
+     "hip": 59316,
+     "hr": 4630,
+     "px": [
+      213,
+      187
+     ]
+    }
+   ]
+  },
+  "Cyg": {
+   "file": "constellation_art/cygnus.webp",
+   "size": [
+    512,
+    512
+   ],
+   "anchors": [
+    {
+     "hip": 107310,
+     "hr": 8309,
+     "px": [
+      7,
+      382
+     ]
+    },
+    {
+     "hip": 94779,
+     "hr": 7328,
+     "px": [
+      474,
+      46
+     ]
+    },
+    {
+     "hip": 95947,
+     "hr": 7417,
+     "px": [
+      467,
+      453
+     ]
+    }
+   ]
+  },
+  "Del": {
+   "file": "constellation_art/delphinus.webp",
+   "size": [
+    256,
+    256
+   ],
+   "anchors": [
+    {
+     "hip": 102532,
+     "hr": 7948,
+     "px": [
+      59,
+      31
+     ]
+    },
+    {
+     "hip": 102805,
+     "hr": 7973,
+     "px": [
+      75,
+      148
+     ]
+    },
+    {
+     "hip": 101421,
+     "hr": 7852,
+     "px": [
+      211,
+      143
+     ]
+    }
+   ]
+  },
+  "Dor": {
+   "file": "constellation_art/dorado.webp",
+   "size": [
+    256,
+    256
+   ],
+   "anchors": [
+    {
+     "hip": 27890,
+     "hr": 2102,
+     "px": [
+      56,
+      197
+     ]
+    },
+    {
+     "hip": 27100,
+     "hr": 2015,
+     "px": [
+      75,
+      228
+     ]
+    },
+    {
+     "hip": 19893,
+     "hr": 1338,
+     "px": [
+      219,
+      46
+     ]
+    }
+   ]
+  },
+  "Dra": {
+   "file": "constellation_art/draco.webp",
+   "size": [
+    512,
+    512
+   ],
+   "anchors": [
+    {
+     "hip": 56211,
+     "hr": 4434,
+     "px": [
+      13,
+      411
+     ]
+    },
+    {
+     "hip": 85670,
+     "hr": 6536,
+     "px": [
+      361,
+      154
+     ]
+    },
+    {
+     "hip": 97433,
+     "hr": 7582,
+     "px": [
+      449,
+      429
+     ]
+    }
+   ]
+  },
+  "Equ": {
+   "file": "constellation_art/equuleus.webp",
+   "size": [
+    256,
+    256
+   ],
+   "anchors": [
+    {
+     "hip": 104521,
+     "hr": 8097,
+     "px": [
+      17,
+      180
+     ]
+    },
+    {
+     "hip": 104987,
+     "hr": 8131,
+     "px": [
+      149,
+      86
+     ]
+    },
+    {
+     "hip": 105570,
+     "hr": 8178,
+     "px": [
+      160,
+      160
+     ]
+    }
+   ]
+  },
+  "Eri": {
+   "file": "constellation_art/eridanus.webp",
+   "size": [
+    512,
+    512
+   ],
+   "anchors": [
+    {
+     "hip": 22109,
+     "hr": 1520,
+     "px": [
+      41,
+      95
+     ]
+    },
+    {
+     "hip": 13701,
+     "hr": 874,
+     "px": [
+      296,
+      44
+     ]
+    },
+    {
+     "hip": 7588,
+     "hr": 472,
+     "px": [
+      493,
+      490
+     ]
+    }
+   ]
+  },
+  "For": {
+   "file": "constellation_art/fornax.webp",
+   "size": [
+    256,
+    256
+   ],
+   "anchors": [
+    {
+     "hip": 14879,
+     "hr": 963,
+     "px": [
+      42,
+      125
+     ]
+    },
+    {
+     "hip": 13202,
+     "hr": 845,
+     "px": [
+      128,
+      37
+     ]
+    },
+    {
+     "hip": 13147,
+     "hr": 841,
+     "px": [
+      190,
+      129
+     ]
+    }
+   ]
+  },
+  "Gem": {
+   "file": "constellation_art/gemini.webp",
+   "size": [
+    256,
+    256
+   ],
+   "anchors": [
+    {
+     "hip": 37740,
+     "hr": 2985,
+     "px": [
+      14,
+      81
+     ]
+    },
+    {
+     "hip": 32362,
+     "hr": 2484,
+     "px": [
+      117,
+      252
+     ]
+    },
+    {
+     "hip": 28734,
+     "hr": 2134,
+     "px": [
+      249,
+      165
+     ]
+    }
+   ]
+  },
+  "Gru": {
+   "file": "constellation_art/grus.webp",
+   "size": [
+    256,
+    256
+   ],
+   "anchors": [
+    {
+     "hip": 114131,
+     "hr": 8787,
+     "px": [
+      49,
+      109
+     ]
+    },
+    {
+     "hip": 112623,
+     "hr": 8675,
+     "px": [
+      85,
+      206
+     ]
+    },
+    {
+     "hip": 108085,
+     "hr": 8353,
+     "px": [
+      220,
+      45
+     ]
+    }
+   ]
+  },
+  "Her": {
+   "file": "constellation_art/hercules.webp",
+   "size": [
+    512,
+    512
+   ],
+   "anchors": [
+    {
+     "hip": 80170,
+     "hr": 6095,
+     "px": [
+      44,
+      115
+     ]
+    },
+    {
+     "hip": 79992,
+     "hr": 6092,
+     "px": [
+      254,
+      477
+     ]
+    },
+    {
+     "hip": 88794,
+     "hr": 6779,
+     "px": [
+      441,
+      102
+     ]
+    }
+   ]
+  },
+  "Hor": {
+   "file": "constellation_art/horlogium.webp",
+   "size": [
+    256,
+    256
+   ],
+   "anchors": [
+    {
+     "hip": 19747,
+     "hr": 1326,
+     "px": [
+      16,
+      235
+     ]
+    },
+    {
+     "hip": 12484,
+     "hr": 802,
+     "px": [
+      184,
+      67
+     ]
+    },
+    {
+     "hip": 14240,
+     "hr": 934,
+     "px": [
+      235,
+      119
+     ]
+    }
+   ]
+  },
+  "Hya": {
+   "file": "constellation_art/hydra.webp",
+   "size": [
+    512,
+    512
+   ],
+   "anchors": [
+    {
+     "hip": 64962,
+     "hr": 5020,
+     "px": [
+      26,
+      491
+     ]
+    },
+    {
+     "hip": 55434,
+     "hr": 4386,
+     "px": [
+      111,
+      149
+     ]
+    },
+    {
+     "hip": 43813,
+     "hr": 3547,
+     "px": [
+      401,
+      33
+     ]
+    }
+   ]
+  },
+  "Hyi": {
+   "file": "constellation_art/hydrus.webp",
+   "size": [
+    256,
+    256
+   ],
+   "anchors": [
+    {
+     "hip": 9236,
+     "hr": 591,
+     "px": [
+      14,
+      204
+     ]
+    },
+    {
+     "hip": 2021,
+     "hr": 98,
+     "px": [
+      201,
+      43
+     ]
+    },
+    {
+     "hip": 17678,
+     "hr": 1208,
+     "px": [
+      241,
+      215
+     ]
+    }
+   ]
+  },
+  "Ind": {
+   "file": "constellation_art/indus.webp",
+   "size": [
+    256,
+    256
+   ],
+   "anchors": [
+    {
+     "hip": 101772,
+     "hr": 7869,
+     "px": [
+      64,
+      143
+     ]
+    },
+    {
+     "hip": 103227,
+     "hr": 7986,
+     "px": [
+      154,
+      20
+     ]
+    },
+    {
+     "hip": 105319,
+     "hr": 8140,
+     "px": [
+      175,
+      98
+     ]
+    }
+   ]
+  },
+  "LMi": {
+   "file": "constellation_art/leo-minor.webp",
+   "size": [
+    256,
+    256
+   ],
+   "anchors": [
+    {
+     "hip": 53229,
+     "hr": 4247,
+     "px": [
+      8,
+      40
+     ]
+    },
+    {
+     "hip": 46952,
+     "hr": 3800,
+     "px": [
+      214,
+      127
+     ]
+    },
+    {
+     "hip": 50303,
+     "hr": 4024,
+     "px": [
+      61,
+      155
+     ]
+    }
+   ]
+  },
+  "Lac": {
+   "file": "constellation_art/lacerta.webp",
+   "size": [
+    256,
+    256
+   ],
+   "anchors": [
+    {
+     "hip": 110538,
+     "hr": 8538,
+     "px": [
+      249,
+      42
+     ]
+    },
+    {
+     "hip": 111104,
+     "hr": 8579,
+     "px": [
+      108,
+      123
+     ]
+    },
+    {
+     "hip": 109937,
+     "hr": 8498,
+     "px": [
+      67,
+      215
+     ]
+    }
+   ]
+  },
+  "Leo": {
+   "file": "constellation_art/leo.webp",
+   "size": [
+    512,
+    512
+   ],
+   "anchors": [
+    {
+     "hip": 57632,
+     "hr": 4534,
+     "px": [
+      69,
+      411
+     ]
+    },
+    {
+     "hip": 49669,
+     "hr": 3982,
+     "px": [
+      383,
+      186
+     ]
+    },
+    {
+     "hip": 47908,
+     "hr": 3873,
+     "px": [
+      321,
+      32
+     ]
+    }
+   ]
+  },
+  "Lep": {
+   "file": "constellation_art/lepus.webp",
+   "size": [
+    256,
+    256
+   ],
+   "anchors": [
+    {
+     "hip": 28910,
+     "hr": 2155,
+     "px": [
+      21,
+      48
+     ]
+    },
+    {
+     "hip": 24244,
+     "hr": 1696,
+     "px": [
+      246,
+      62
+     ]
+    },
+    {
+     "hip": 23685,
+     "hr": 1654,
+     "px": [
+      213,
+      235
+     ]
+    }
+   ]
+  },
+  "Lib": {
+   "file": "constellation_art/libra.webp",
+   "size": [
+    256,
+    256
+   ],
+   "anchors": [
+    {
+     "hip": 74785,
+     "hr": 5685,
+     "px": [
+      41,
+      27
+     ]
+    },
+    {
+     "hip": 77853,
+     "hr": 5908,
+     "px": [
+      58,
+      170
+     ]
+    },
+    {
+     "hip": 73714,
+     "hr": 5603,
+     "px": [
+      224,
+      107
+     ]
+    }
+   ]
+  },
+  "Lup": {
+   "file": "constellation_art/lupus.webp",
+   "size": [
+    512,
+    512
+   ],
+   "anchors": [
+    {
+     "hip": 74395,
+     "hr": 5649,
+     "px": [
+      90,
+      257
+     ]
+    },
+    {
+     "hip": 70576,
+     "hr": 5396,
+     "px": [
+      207,
+      435
+     ]
+    },
+    {
+     "hip": 75177,
+     "hr": 5705,
+     "px": [
+      425,
+      239
+     ]
+    }
+   ]
+  },
+  "Lyn": {
+   "file": "constellation_art/lynx.webp",
+   "size": [
+    512,
+    512
+   ],
+   "anchors": [
+    {
+     "hip": 44248,
+     "hr": 3579,
+     "px": [
+      100,
+      216
+     ]
+    },
+    {
+     "hip": 36145,
+     "hr": 2818,
+     "px": [
+      337,
+      212
+     ]
+    },
+    {
+     "hip": 30060,
+     "hr": 2238,
+     "px": [
+      472,
+      119
+     ]
+    }
+   ]
+  },
+  "Lyr": {
+   "file": "constellation_art/lyra.webp",
+   "size": [
+    256,
+    256
+   ],
+   "anchors": [
+    {
+     "hip": 92791,
+     "hr": 7139,
+     "px": [
+      100,
+      96
+     ]
+    },
+    {
+     "hip": 91262,
+     "hr": 7001,
+     "px": [
+      157,
+      38
+     ]
+    },
+    {
+     "hip": 92420,
+     "hr": 7106,
+     "px": [
+      139,
+      162
+     ]
+    }
+   ]
+  },
+  "Men": {
+   "file": "constellation_art/mensa.webp",
+   "size": [
+    256,
+    256
+   ],
+   "anchors": [
+    {
+     "hip": 21949,
+     "hr": 1541,
+     "px": [
+      100,
+      67
+     ]
+    },
+    {
+     "hip": 25918,
+     "hr": 1953,
+     "px": [
+      179,
+      136
+     ]
+    },
+    {
+     "hip": 29134,
+     "hr": 2221,
+     "px": [
+      54,
+      183
+     ]
+    }
+   ]
+  },
+  "Mic": {
+   "file": "constellation_art/microscopium.webp",
+   "size": [
+    256,
+    256
+   ],
+   "anchors": [
+    {
+     "hip": 105140,
+     "hr": 8135,
+     "px": [
+      122,
+      226
+     ]
+    },
+    {
+     "hip": 103738,
+     "hr": 8039,
+     "px": [
+      168,
+      148
+     ]
+    },
+    {
+     "hip": 102831,
+     "hr": 7965,
+     "px": [
+      234,
+      115
+     ]
+    }
+   ]
+  },
+  "Mon": {
+   "file": "constellation_art/monoceros.webp",
+   "size": [
+    512,
+    512
+   ],
+   "anchors": [
+    {
+     "hip": 39863,
+     "hr": 3188,
+     "px": [
+      20,
+      306
+     ]
+    },
+    {
+     "hip": 31978,
+     "hr": 2456,
+     "px": [
+      394,
+      80
+     ]
+    },
+    {
+     "hip": 29651,
+     "hr": 2227,
+     "px": [
+      509,
+      359
+     ]
+    }
+   ]
+  },
+  "Mus": {
+   "file": "constellation_art/musca.webp",
+   "size": [
+    256,
+    256
+   ],
+   "anchors": [
+    {
+     "hip": 61199,
+     "hr": 4773,
+     "px": [
+      57,
+      52
+     ]
+    },
+    {
+     "hip": 62322,
+     "hr": 4844,
+     "px": [
+      177,
+      68
+     ]
+    },
+    {
+     "hip": 57363,
+     "hr": 4520,
+     "px": [
+      129,
+      236
+     ]
+    }
+   ]
+  },
+  "Nor": {
+   "file": "constellation_art/norma.webp",
+   "size": [
+    128,
+    128
+   ],
+   "anchors": [
+    {
+     "hip": 78639,
+     "hr": 5962,
+     "px": [
+      17,
+      45
+     ]
+    },
+    {
+     "hip": 79509,
+     "hr": 6024,
+     "px": [
+      101,
+      38
+     ]
+    },
+    {
+     "hip": 80582,
+     "hr": 6115,
+     "px": [
+      16,
+      112
+     ]
+    }
+   ]
+  },
+  "Oct": {
+   "file": "constellation_art/octans.webp",
+   "size": [
+    256,
+    256
+   ],
+   "anchors": [
+    {
+     "hip": 70638,
+     "hr": 5339,
+     "px": [
+      15,
+      16
+     ]
+    },
+    {
+     "hip": 107089,
+     "hr": 8254,
+     "px": [
+      236,
+      239
+     ]
+    },
+    {
+     "hip": 112405,
+     "hr": 8630,
+     "px": [
+      247,
+      140
+     ]
+    }
+   ]
+  },
+  "Oph": {
+   "file": "constellation_art/ophiuchus.webp",
+   "size": [
+    512,
+    512
+   ],
+   "anchors": [
+    {
+     "hip": 92946,
+     "hr": 7141,
+     "px": [
+      5,
+      183
+     ]
+    },
+    {
+     "hip": 77233,
+     "hr": 5867,
+     "px": [
+      452,
+      47
+     ]
+    },
+    {
+     "hip": 85755,
+     "hr": 6519,
+     "px": [
+      238,
+      453
+     ]
+    }
+   ]
+  },
+  "Ori": {
+   "file": "constellation_art/orion.webp",
+   "size": [
+    512,
+    512
+   ],
+   "anchors": [
+    {
+     "hip": 27913,
+     "hr": 2047,
+     "px": [
+      59,
+      11
+     ]
+    },
+    {
+     "hip": 27366,
+     "hr": 2004,
+     "px": [
+      329,
+      477
+     ]
+    },
+    {
+     "hip": 22449,
+     "hr": 1543,
+     "px": [
+      421,
+      91
+     ]
+    }
+   ]
+  },
+  "Pav": {
+   "file": "constellation_art/pavo.webp",
+   "size": [
+    256,
+    256
+   ],
+   "anchors": [
+    {
+     "hip": 100751,
+     "hr": 7790,
+     "px": [
+      55,
+      60
+     ]
+    },
+    {
+     "hip": 98495,
+     "hr": 7590,
+     "px": [
+      110,
+      208
+     ]
+    },
+    {
+     "hip": 86929,
+     "hr": 6582,
+     "px": [
+      235,
+      146
+     ]
+    }
+   ]
+  },
+  "Peg": {
+   "file": "constellation_art/pegasus.webp",
+   "size": [
+    512,
+    512
+   ],
+   "anchors": [
+    {
+     "hip": 107315,
+     "hr": 8308,
+     "px": [
+      164,
+      41
+     ]
+    },
+    {
+     "hip": 109410,
+     "hr": 8454,
+     "px": [
+      47,
+      283
+     ]
+    },
+    {
+     "hip": 1067,
+     "hr": 39,
+     "px": [
+      409,
+      349
+     ]
+    }
+   ]
+  },
+  "Per": {
+   "file": "constellation_art/perseus.webp",
+   "size": [
+    512,
+    512
+   ],
+   "anchors": [
+    {
+     "hip": 18532,
+     "hr": 1220,
+     "px": [
+      164,
+      323
+     ]
+    },
+    {
+     "hip": 15863,
+     "hr": 1017,
+     "px": [
+      299,
+      175
+     ]
+    },
+    {
+     "hip": 13254,
+     "hr": 840,
+     "px": [
+      385,
+      386
+     ]
+    }
+   ]
+  },
+  "Phe": {
+   "file": "constellation_art/phoenix.webp",
+   "size": [
+    256,
+    256
+   ],
+   "anchors": [
+    {
+     "hip": 8837,
+     "hr": 555,
+     "px": [
+      55,
+      243
+     ]
+    },
+    {
+     "hip": 765,
+     "hr": 25,
+     "px": [
+      209,
+      15
+     ]
+    },
+    {
+     "hip": 5348,
+     "hr": 338,
+     "px": [
+      229,
+      214
+     ]
+    }
+   ]
+  },
+  "Pic": {
+   "file": "constellation_art/pictor.webp",
+   "size": [
+    256,
+    256
+   ],
+   "anchors": [
+    {
+     "hip": 32607,
+     "hr": 2550,
+     "px": [
+      4,
+      252
+     ]
+    },
+    {
+     "hip": 27530,
+     "hr": 2042,
+     "px": [
+      148,
+      138
+     ]
+    },
+    {
+     "hip": 27321,
+     "hr": 2020,
+     "px": [
+      167,
+      38
+     ]
+    }
+   ]
+  },
+  "PsA": {
+   "file": "constellation_art/piscis-austrinus.webp",
+   "size": [
+    256,
+    256
+   ],
+   "anchors": [
+    {
+     "hip": 113246,
+     "hr": 8720,
+     "px": [
+      190,
+      5
+     ]
+    },
+    {
+     "hip": 107608,
+     "hr": 8326,
+     "px": [
+      82,
+      202
+     ]
+    },
+    {
+     "hip": 111954,
+     "hr": 8628,
+     "px": [
+      236,
+      92
+     ]
+    }
+   ]
+  },
+  "Psc": {
+   "file": "constellation_art/pisces.webp",
+   "size": [
+    512,
+    512
+   ],
+   "anchors": [
+    {
+     "hip": 4889,
+     "hr": 291,
+     "px": [
+      24,
+      104
+     ]
+    },
+    {
+     "hip": 9487,
+     "hr": 595,
+     "px": [
+      111,
+      489
+     ]
+    },
+    {
+     "hip": 114971,
+     "hr": 8852,
+     "px": [
+      481,
+      155
+     ]
+    }
+   ]
+  },
+  "Pup": {
+   "file": "constellation_art/argonavis.webp",
+   "size": [
+    512,
+    512
+   ],
+   "anchors": [
+    {
+     "hip": 45238,
+     "hr": 3685,
+     "px": [
+      202,
+      455
+     ]
+    },
+    {
+     "hip": 50191,
+     "hr": 4023,
+     "px": [
+      62,
+      216
+     ]
+    },
+    {
+     "hip": 39757,
+     "hr": 3185,
+     "px": [
+      298,
+      22
+     ]
+    }
+   ],
+   "shared_with": "Car",
+   "note": "no separate figure; drawn as part of Argo Navis"
+  },
+  "Pyx": {
+   "file": "constellation_art/pyxis.webp",
+   "size": [
+    256,
+    256
+   ],
+   "anchors": [
+    {
+     "hip": 41723,
+     "hr": 3362,
+     "px": [
+      152,
+      220
+     ]
+    },
+    {
+     "hip": 42828,
+     "hr": 3468,
+     "px": [
+      94,
+      159
+     ]
+    },
+    {
+     "hip": 42515,
+     "hr": 3438,
+     "px": [
+      44,
+      202
+     ]
+    }
+   ]
+  },
+  "Ret": {
+   "file": "constellation_art/reticulum.webp",
+   "size": [
+    128,
+    128
+   ],
+   "anchors": [
+    {
+     "hip": 18597,
+     "hr": 1247,
+     "px": [
+      47,
+      56
+     ]
+    },
+    {
+     "hip": 19780,
+     "hr": 1336,
+     "px": [
+      78,
+      88
+     ]
+    },
+    {
+     "hip": 19921,
+     "hr": 1355,
+     "px": [
+      16,
+      111
+     ]
+    }
+   ]
+  },
+  "Scl": {
+   "file": "constellation_art/sculptor.webp",
+   "size": [
+    256,
+    256
+   ],
+   "anchors": [
+    {
+     "hip": 115102,
+     "hr": 8863,
+     "px": [
+      231,
+      39
+     ]
+    },
+    {
+     "hip": 116231,
+     "hr": 8937,
+     "px": [
+      240,
+      106
+     ]
+    },
+    {
+     "hip": 4577,
+     "hr": 280,
+     "px": [
+      32,
+      174
+     ]
+    }
+   ]
+  },
+  "Sco": {
+   "file": "constellation_art/scorpius.webp",
+   "size": [
+    512,
+    512
+   ],
+   "anchors": [
+    {
+     "hip": 78820,
+     "hr": 5984,
+     "px": [
+      447,
+      29
+     ]
+    },
+    {
+     "hip": 85927,
+     "hr": 6527,
+     "px": [
+      62,
+      365
+     ]
+    },
+    {
+     "hip": 82729,
+     "hr": 6271,
+     "px": [
+      217,
+      462
+     ]
+    }
+   ]
+  },
+  "Sct": {
+   "file": "constellation_art/scutum.webp",
+   "size": [
+    256,
+    256
+   ],
+   "anchors": [
+    {
+     "hip": 92175,
+     "hr": 7063,
+     "px": [
+      52,
+      17
+     ]
+    },
+    {
+     "hip": 90595,
+     "hr": 6930,
+     "px": [
+      224,
+      124
+     ]
+    },
+    {
+     "hip": 92814,
+     "hr": 7119,
+     "px": [
+      139,
+      206
+     ]
+    }
+   ]
+  },
+  "Ser": {
+   "file": "constellation_art/ophiuchus.webp",
+   "size": [
+    512,
+    512
+   ],
+   "anchors": [
+    {
+     "hip": 92946,
+     "hr": 7141,
+     "px": [
+      5,
+      183
+     ]
+    },
+    {
+     "hip": 77233,
+     "hr": 5867,
+     "px": [
+      452,
+      47
+     ]
+    },
+    {
+     "hip": 85755,
+     "hr": 6519,
+     "px": [
+      238,
+      453
+     ]
+    }
+   ],
+   "shared_with": "Oph",
+   "note": "no separate figure; drawn as part of Ophiuchus (serpent held by Ophiuchus)"
+  },
+  "Sex": {
+   "file": "constellation_art/sextans.webp",
+   "size": [
+    128,
+    128
+   ],
+   "anchors": [
+    {
+     "hip": 51437,
+     "hr": 4119,
+     "px": [
+      26,
+      54
+     ]
+    },
+    {
+     "hip": 49641,
+     "hr": 3981,
+     "px": [
+      68,
+      36
+     ]
+    },
+    {
+     "hip": 48437,
+     "hr": 3909,
+     "px": [
+      118,
+      84
+     ]
+    }
+   ]
+  },
+  "Sge": {
+   "file": "constellation_art/sagitta.webp",
+   "size": [
+    256,
+    256
+   ],
+   "anchors": [
+    {
+     "hip": 98920,
+     "hr": 7679,
+     "px": [
+      6,
+      12
+     ]
+    },
+    {
+     "hip": 96757,
+     "hr": 7479,
+     "px": [
+      249,
+      213
+     ]
+    },
+    {
+     "hip": 96837,
+     "hr": 7488,
+     "px": [
+      218,
+      243
+     ]
+    }
+   ]
+  },
+  "Sgr": {
+   "file": "constellation_art/sagittarius.webp",
+   "size": [
+    512,
+    512
+   ],
+   "anchors": [
+    {
+     "hip": 95168,
+     "hr": 7340,
+     "px": [
+      96,
+      82
+     ]
+    },
+    {
+     "hip": 95294,
+     "hr": 7343,
+     "px": [
+      307,
+      492
+     ]
+    },
+    {
+     "hip": 87072,
+     "hr": 6616,
+     "px": [
+      506,
+      100
+     ]
+    }
+   ]
+  },
+  "Tau": {
+   "file": "constellation_art/taurus.webp",
+   "size": [
+    512,
+    512
+   ],
+   "anchors": [
+    {
+     "hip": 26451,
+     "hr": 1910,
+     "px": [
+      13,
+      92
+     ]
+    },
+    {
+     "hip": 15900,
+     "hr": 1030,
+     "px": [
+      399,
+      438
+     ]
+    },
+    {
+     "hip": 17847,
+     "hr": 1178,
+     "px": [
+      382,
+      192
+     ]
+    }
+   ]
+  },
+  "Tel": {
+   "file": "constellation_art/telescopium.webp",
+   "size": [
+    128,
+    128
+   ],
+   "anchors": [
+    {
+     "hip": 91589,
+     "hr": null,
+     "px": [
+      30,
+      66
+     ],
+     "raDeg": 280.182879,
+     "decDeg": -47.027274,
+     "note": "not in BSC; Hipparcos 2007 (CDS I/311) J2000 position, Hp 6.83"
+    },
+    {
+     "hip": 90422,
+     "hr": 6897,
+     "px": [
+      101,
+      40
+     ]
+    },
+    {
+     "hip": 90568,
+     "hr": 6905,
+     "px": [
+      106,
+      92
+     ]
+    }
+   ]
+  },
+  "Tra": {
+   "file": "constellation_art/triangulum-australe.webp",
+   "size": [
+    128,
+    128
+   ],
+   "anchors": [
+    {
+     "hip": 77952,
+     "hr": 5897,
+     "px": [
+      26,
+      12
+     ]
+    },
+    {
+     "hip": 74946,
+     "hr": 5671,
+     "px": [
+      108,
+      15
+     ]
+    },
+    {
+     "hip": 82273,
+     "hr": 6217,
+     "px": [
+      60,
+      106
+     ]
+    }
+   ]
+  },
+  "Tri": {
+   "file": "constellation_art/triangulum.webp",
+   "size": [
+    128,
+    128
+   ],
+   "anchors": [
+    {
+     "hip": 10064,
+     "hr": 622,
+     "px": [
+      16,
+      42
+     ]
+    },
+    {
+     "hip": 10559,
+     "hr": 655,
+     "px": [
+      13,
+      70
+     ]
+    },
+    {
+     "hip": 8796,
+     "hr": 544,
+     "px": [
+      97,
+      78
+     ]
+    }
+   ]
+  },
+  "Tuc": {
+   "file": "constellation_art/tucana.webp",
+   "size": [
+    256,
+    256
+   ],
+   "anchors": [
+    {
+     "hip": 2484,
+     "hr": 126,
+     "px": [
+      53,
+      121
+     ]
+    },
+    {
+     "hip": 114996,
+     "hr": 8848,
+     "px": [
+      154,
+      86
+     ]
+    },
+    {
+     "hip": 110130,
+     "hr": 8502,
+     "px": [
+      224,
+      141
+     ]
+    }
+   ]
+  },
+  "UMa": {
+   "file": "constellation_art/ursa-major.webp",
+   "size": [
+    512,
+    512
+   ],
+   "anchors": [
+    {
+     "hip": 67301,
+     "hr": 5191,
+     "px": [
+      26,
+      75
+     ]
+    },
+    {
+     "hip": 41704,
+     "hr": 3323,
+     "px": [
+      452,
+      272
+     ]
+    },
+    {
+     "hip": 50372,
+     "hr": 4033,
+     "px": [
+      258,
+      394
+     ]
+    }
+   ]
+  },
+  "UMi": {
+   "file": "constellation_art/ursa-minor.webp",
+   "size": [
+    256,
+    256
+   ],
+   "anchors": [
+    {
+     "hip": 11767,
+     "hr": 424,
+     "px": [
+      15,
+      20
+     ]
+    },
+    {
+     "hip": 59504,
+     "hr": 4646,
+     "px": [
+      193,
+      51
+     ]
+    },
+    {
+     "hip": 79822,
+     "hr": 6116,
+     "px": [
+      93,
+      209
+     ]
+    }
+   ]
+  },
+  "Vel": {
+   "file": "constellation_art/argonavis.webp",
+   "size": [
+    512,
+    512
+   ],
+   "anchors": [
+    {
+     "hip": 45238,
+     "hr": 3685,
+     "px": [
+      202,
+      455
+     ]
+    },
+    {
+     "hip": 50191,
+     "hr": 4023,
+     "px": [
+      62,
+      216
+     ]
+    },
+    {
+     "hip": 39757,
+     "hr": 3185,
+     "px": [
+      298,
+      22
+     ]
+    }
+   ],
+   "shared_with": "Car",
+   "note": "no separate figure; drawn as part of Argo Navis"
+  },
+  "Vir": {
+   "file": "constellation_art/virgo.webp",
+   "size": [
+    512,
+    512
+   ],
+   "anchors": [
+    {
+     "hip": 72220,
+     "hr": 5511,
+     "px": [
+      65,
+      389
+     ]
+    },
+    {
+     "hip": 57380,
+     "hr": 4517,
+     "px": [
+      454,
+      57
+     ]
+    },
+    {
+     "hip": 65474,
+     "hr": 5056,
+     "px": [
+      338,
+      382
+     ]
+    }
+   ]
+  },
+  "Vol": {
+   "file": "constellation_art/volans.webp",
+   "size": [
+    256,
+    256
+   ],
+   "anchors": [
+    {
+     "hip": 44382,
+     "hr": 3615,
+     "px": [
+      55,
+      85
+     ]
+    },
+    {
+     "hip": 35228,
+     "hr": 2803,
+     "px": [
+      210,
+      122
+     ]
+    },
+    {
+     "hip": 34481,
+     "hr": 2736,
+     "px": [
+      207,
+      163
+     ]
+    }
+   ]
+  },
+  "Vul": {
+   "file": "constellation_art/vulpecula.webp",
+   "size": [
+    256,
+    256
+   ],
+   "anchors": [
+    {
+     "hip": 98543,
+     "hr": 7653,
+     "px": [
+      35,
+      133
+     ]
+    },
+    {
+     "hip": 95771,
+     "hr": 7405,
+     "px": [
+      174,
+      111
+     ]
+    },
+    {
+     "hip": 94703,
+     "hr": 7306,
+     "px": [
+      242,
+      135
+     ]
+    }
+   ]
+  }
+ }
+}
